@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Massagem Móvel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body1">
+    <!-- Barra Superior -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Logo à esquerda -->
+            </a>
+            <img src="images/logotxt.png" alt="Logo2" class="logo-img1"> <!-- Logo centralizada -->
+        </div>
+        <div class="menu">
+            <span class="languages">
+                <button>Deutsch</button>
+                <button>Português</button>
+                <button>English</button>
+            </span>
+            <div class="menu-dots">
+                <img src="images/menu.png" alt="menulinhas" class="menu-img">
+            </div>
+        </div>
+    </header>
+    <div class="links">
+        <a href="index.html">Início</a> / 
+        <a href="#sobre-mim">Sobre Mim</a>
+    </div>
+
+    <!-- Seção Sobre Mim -->
+    <section class="sobre-mim desktop">
+        <!-- Links -->
+
+        <!-- Título -->
+        <h1 class="titulo-sobre-mim pc">Sobre Mim</h1>
+
+        <!-- Imagem -->
+        <div class="foto-sobre-mim">
+            <img src="images/eumassagem.png" alt="Foto de Fahed" class="foto-mim pc">
+        </div>
+
+        <!-- Texto -->
+        <p class="texto-sobre-mim pc">
+            Meu nome é Fahed e sou luso-brasileiro descendente de libaneses. Atuo como massagista profissional desde 2021 e concluí minha formação em Portugal. Apaixonado pelo que faço, dedico-me a proporcionar relaxamento e bem-estar através de técnicas especializadas e cuidadosamente aplicadas.
+        <br>
+        <br>Sou surdo oralizado, o que me torna ainda mais atento às necessidades dos meus clientes. Comunico-me com clareza, entendo um pouco de inglês e estou aprendendo alemão para melhor atendê-lo.
+        <br>
+        <br>Minha prioridade é oferecer um atendimento personalizado, garantindo que cada sessão seja única, relaxante e adaptada às suas expectativas.
+            Permita-se vivenciar uma experiência de bem-estar inesquecível. Agende sua massagem e renove suas energias hoje mesmo!
+        </p>
+
+        <!-- Botão WhatsApp -->
+        <section class="botao-whats pc">
+            <a href="https://wa.me/+491637977580" class="cta-whatsapp pc">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+                <span class="number">+49 163 7977580</span>
+                <span class="agenda-text">Agenda sua massagem</span>
+            </a>
+        </section>
+    </section>
+    <footer class="fundo-branco">
+        <section class="media-principal2">
+    
+            <section class="buttons-sectiona">
+                <div class="button-box">
+                    <div class="button">
+                        <a href="service.html">
+                            <img src="images/service.png" alt="Serviços">
+                            <span>Serviços</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="sobremim.html">
+                            <img src="images/sobre mim.png" alt="Sobre Mim">
+                            <span>Sobre mim</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <div class="button">
+                        <a href="howwork.html">
+                            <img src="images/howwork.png" alt="Como Funciona">
+                            <span>Como Funciona?</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="pergunta.html">
+                            <img src="images/pergunta.png" alt="Perguntas Frequentes">
+                            <span>Perguntas Frequentes</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Textos para cada idioma
+            const translations = {
+                de: {
+                    title: "Über mich",
+                    heading: "Über mich",
+                    description: "Mein Name ist Fahed und ich bin portugiesisch-brasilianischer Herkunft mit libanesischen Wurzeln. Seit 2021 arbeite ich als professioneller Masseur und habe meine Ausbildung in Portugal abgeschlossen. Mit Leidenschaft für meinen Beruf widme ich mich der Bereitstellung von Entspannung und Wohlbefinden durch spezialisierte und sorgfältig angewandte Techniken.<br><br>Ich bin oral gehörlos, was mich besonders aufmerksam für die Bedürfnisse meiner Kunden macht. Ich kommuniziere klar, verstehe ein wenig Englisch und lerne Deutsch, um Sie besser bedienen zu können.<br><br>Meine Priorität ist es, einen individuellen Service zu bieten, der sicherstellt, dass jede Sitzung einzigartig, entspannend und auf Ihre Erwartungen abgestimmt ist. Gönnen Sie sich ein unvergessliches Wohlfühlerlebnis. Buchen Sie Ihre Massage und tanken Sie neue Energie noch heute!",
+                    button: "Buchen Sie Ihre Massage",
+                    services: "Dienstleistungen",
+                    about: "Über mich",
+                    howItWorks: "Wie funktioniert's?",
+                    faq: "Häufige Fragen",
+                    whatsapp: "Massage buchen", // Texto do botão do WhatsApp
+                },
+                pt: {
+                    title: "Sobre Mim",
+                    heading: "Sobre Mim",
+                    description: "Meu nome é Fahed e sou luso-brasileiro descendente de libaneses. Atuo como massagista profissional desde 2021 e concluí minha formação em Portugal. Apaixonado pelo que faço, dedico-me a proporcionar relaxamento e bem-estar através de técnicas especializadas e cuidadosamente aplicadas.<br><br>Sou surdo oralizado, o que me torna ainda mais atento às necessidades dos meus clientes. Comunico-me com clareza, entendo um pouco de inglês e estou aprendendo alemão para melhor atendê-lo.<br><br>Minha prioridade é oferecer um atendimento personalizado, garantindo que cada sessão seja única, relaxante e adaptada às suas expectativas.<br><br>Permita-se vivenciar uma experiência de bem-estar inesquecível. Agende sua massagem e renove suas energias hoje mesmo!",
+                    button: "Agende sua massagem",
+                    services: "Serviços",
+                    about: "Sobre mim",
+                    howItWorks: "Como Funciona?",
+                    faq: "Perguntas Frequentes",
+                    whatsapp: "Agende sua massagem", // Texto do botão do WhatsApp
+                },
+                en: {
+                    title: "About Me",
+                    heading: "About Me",
+                    description: "My name is Fahed, and I am a Portuguese-Brazilian of Lebanese descent. I have been working as a professional massage therapist since 2021, having completed my training in Portugal. Passionate about what I do, I am dedicated to providing relaxation and well-being through specialized and carefully applied techniques.<br><br>I am orally deaf, which makes me even more attentive to the needs of my clients. I communicate clearly, have a basic understanding of English, and am learning German to serve you better.<br><br>My priority is to offer personalized service, ensuring that each session is unique, relaxing, and tailored to your expectations.<br><br>Allow yourself to experience unforgettable well-being. Book your massage and renew your energy today!",
+                    button: "Book your massage",
+                    services: "Services",
+                    about: "About Me",
+                    howItWorks: "How It Works?",
+                    faq: "Frequently Asked Questions",
+                    whatsapp: "Book your massage", // Texto do botão do WhatsApp
+                },
+            };
+    
+            // Detecta o idioma atual do localStorage ou define para 'de'
+            let currentLanguage = localStorage.getItem("language") || "de";
+            updateLanguage(currentLanguage);
+    
+            // Função para atualizar o idioma
+            function updateLanguage(language) {
+                currentLanguage = language;
+                localStorage.setItem("language", language);
+    
+                // Atualizar título da página e outros textos
+                document.title = translations[language].title;
+                document.querySelector("h1").innerHTML = translations[language].heading;
+                document.querySelector("p").innerHTML = translations[language].description;
+    
+                // Atualizar os botões do footer
+                const buttons = document.querySelectorAll('.footer-button span');
+                buttons.forEach(button => {
+                    if (button.closest('a').href.includes('service.html')) {
+                        button.textContent = translations[language].services;
+                    } else if (button.closest('a').href.includes('sobremim.html')) {
+                        button.textContent = translations[language].about;
+                    } else if (button.closest('a').href.includes('howwork.html')) {
+                        button.textContent = translations[language].howItWorks;
+                    } else if (button.closest('a').href.includes('pergunta.html')) {
+                        button.textContent = translations[language].faq;
+                    }
+                });
+    
+                // Atualizar o botão do WhatsApp, se presente
+                const whatsappButton = document.querySelector(".cta-whatsapp .agenda-text");
+                if (whatsappButton) {
+                    whatsappButton.textContent = translations[language].whatsapp;
+                } else {
+                    console.error("Botão do WhatsApp não encontrado.");
+                }
+            }
+    
+            // Adicionar eventos aos botões de idioma
+            document.querySelectorAll(".languages button").forEach(button => {
+                button.addEventListener("click", () => {
+                    const language = button.textContent.toLowerCase(); // de, pt, en
+                    updateLanguage(language === "deutsch" ? "de" : language === "português" ? "pt" : "en");
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

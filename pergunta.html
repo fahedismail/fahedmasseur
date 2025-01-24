@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body1">
+    <!-- Barra Superior -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Logo à esquerda -->
+            </a>
+            <img src="images/logotxt.png" alt="Logo2" class="logo-img1"> <!-- Logo centralizada -->
+        </div>
+        <div class="menu">
+            <span class="languages">
+                <button>Deutsch</button>
+                <button>Português</button>
+                <button>English</button>
+            </span>
+            <div class="menu-dots">
+                <img src="images/menu.png" alt="menulinhas" class="menu-img">
+            </div>
+        </div>
+    </header>
+    <div class="links">
+        <a href="index.html">Início</a> / 
+        <a href="#Como-funciona">Como funciona</a>
+    </div>
+
+    <!-- Como funciona -->
+    <section class="sobre-mim ask">
+        <!-- Links -->
+
+        <!-- Título -->
+        <h1 class="titulo-sobre-mim how ask">Perguntas frequentes</h1>
+
+        <!-- Texto -->
+        <p class="texto-how ask">
+            <strong>1. O que eu preciso fazer para receber a massagem em minha casa?</strong><br> Escolha um ambiente tranquilo e confortável, com espaço suficiente para a mesa de massagem. Marque a consulta em um horário adequado, garantindo que tenha tempo para relaxar sem pressa. Não se preocupe com os materiais, pois levarei tudo o que for necessário. Use roupas confortáveis ou, se preferir, roupas íntimas. Você também pode optar por ficar nu, caso se sinta mais à vontade.<br><br>
+
+            <br> <strong>2. Como faço para marcar uma consulta?</strong><br> O agendamento é feito exclusivamente por WhatsApp. Basta me enviar uma mensagem para combinarmos o horário e o local.<br><br>
+            
+            <br><strong>3. Tenho dores ou problemas de saúde, posso receber a massagem?</strong><br> Minhas massagens são para relaxamento e bem-estar, não sendo indicadas para tratamentos médicos. Elas são voltadas para pessoas saudáveis.<br><br>
+            
+            <br><strong>4. Posso pagar com cartão?</strong><br> Sim, você pode pagar em dinheiro, com cartão (VISA, Mastercard, etc.), ou via Google Pay.<br><br>
+            
+            <br><strong>5. Quais são os horários de atendimento?</strong><br> Atendo de segunda a sexta-feira, com horários flexíveis. Entre em contato pelo WhatsApp para agendar.<br><br>
+            
+            <br><strong>Comunicação:</strong><br> Informe-me sobre suas preferências e necessidades antes da massagem, como áreas que precisam de mais atenção ou se há algo que deve ser evitado.<br><br>
+        </p>
+
+        <!-- Botão WhatsApp -->
+        <section class="botao-whats ask">
+            <a href="https://wa.me/+491637977580" class="cta-whatsapp">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+                <span class="number">+49 163 7977580</span>
+                <span class="agenda-text">Agenda sua massagem</span>
+            </a>
+        </section>
+    </section>
+    <footer class="fundo-branco">
+        <section class="media-principal2">
+    
+            <section class="buttons-sectiona">
+                <div class="button-box">
+                    <div class="button">
+                        <a href="service.html">
+                            <img src="images/service.png" alt="Serviços">
+                            <span>Serviços</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="sobremim.html">
+                            <img src="images/sobre mim.png" alt="Sobre Mim">
+                            <span>Sobre mim</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <div class="button">
+                        <a href="howwork.html">
+                            <img src="images/howwork.png" alt="Como Funciona">
+                            <span>Como Funciona?</span>
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="pergunta.html">
+                            <img src="images/pergunta.png" alt="Perguntas Frequentes">
+                            <span>Perguntas Frequentes</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Textos para cada idioma
+            const translations = {
+                de: {
+                    title: "Häufig gestellte Fragen",
+                    question1: "1. Was muss ich tun, um eine Massage bei mir zu Hause zu erhalten?",
+                    answer1: "Wählen Sie eine ruhige und bequeme Umgebung mit ausreichend Platz für den Massagetisch. Vereinbaren Sie einen Termin zu einer geeigneten Zeit, damit Sie sich ohne Eile entspannen können. Machen Sie sich keine Sorgen um die Materialien, ich bringe alles mit, was benötigt wird. Tragen Sie bequeme Kleidung oder, wenn Sie möchten, Unterwäsche. Sie können sich auch nackt ausziehen, wenn Sie sich wohler fühlen.",
+                    question2: "2. Wie kann ich einen Termin vereinbaren?",
+                    answer2: "Die Terminvereinbarung erfolgt ausschließlich über WhatsApp. Senden Sie mir einfach eine Nachricht, um die Uhrzeit und den Ort zu vereinbaren.",
+                    question3: "3. Habe ich Schmerzen oder gesundheitliche Probleme, kann ich trotzdem eine Massage bekommen?",
+                    answer3: "Meine Massagen dienen der Entspannung und dem Wohlbefinden und sind nicht für medizinische Behandlungen gedacht. Sie richten sich an gesunde Menschen.",
+                    question4: "4. Kann ich mit Karte bezahlen?",
+                    answer4: "Ja, Sie können bar bezahlen, mit Karte (VISA, Mastercard, etc.) oder per Google Pay.",
+                    question5: "5. Was sind die Öffnungszeiten?",
+                    answer5: "Ich bin von Montag bis Freitag mit flexiblen Stunden erreichbar. Kontaktieren Sie mich über WhatsApp, um einen Termin zu vereinbaren.",
+                    communication: "Kommunikation:",
+                    communicationDetail: "Informieren Sie mich vor der Massage über Ihre Vorlieben und Bedürfnisse, wie z.B. Bereiche, die mehr Aufmerksamkeit benötigen oder etwas, das vermieden werden sollte."
+                },
+                pt: {
+                    title: "Perguntas Frequentes",
+                    question1: "1. O que eu preciso fazer para receber a massagem em minha casa?",
+                    answer1: "Escolha um ambiente tranquilo e confortável, com espaço suficiente para a mesa de massagem. Marque a consulta em um horário adequado, garantindo que tenha tempo para relaxar sem pressa. Não se preocupe com os materiais, pois levarei tudo o que for necessário. Use roupas confortáveis ou, se preferir, roupas íntimas. Você também pode optar por ficar nu, caso se sinta mais à vontade.",
+                    question2: "2. Como faço para marcar uma consulta?",
+                    answer2: "O agendamento é feito exclusivamente por WhatsApp. Basta me enviar uma mensagem para combinarmos o horário e o local.",
+                    question3: "3. Tenho dores ou problemas de saúde, posso receber a massagem?",
+                    answer3: "Minhas massagens são para relaxamento e bem-estar, não sendo indicadas para tratamentos médicos. Elas são voltadas para pessoas saudáveis.",
+                    question4: "4. Posso pagar com cartão?",
+                    answer4: "Sim, você pode pagar em dinheiro, com cartão (VISA, Mastercard, etc.), ou via Google Pay.",
+                    question5: "5. Quais são os horários de atendimento?",
+                    answer5: "Atendo de segunda a sexta-feira, com horários flexíveis. Entre em contato pelo WhatsApp para agendar.",
+                    communication: "Comunicação:",
+                    communicationDetail: "Informe-me sobre suas preferências e necessidades antes da massagem, como áreas que precisam de mais atenção ou se há algo que deve ser evitado."
+                },
+                en: {
+                    title: "Frequently Asked Questions",
+                    question1: "1. What do I need to do to receive the massage at my home?",
+                    answer1: "Choose a quiet and comfortable environment with enough space for the massage table. Schedule the appointment at a convenient time, ensuring you have time to relax without rushing. Don’t worry about the materials, as I will bring everything needed. Wear comfortable clothing or, if you prefer, underwear. You can also choose to be naked if you feel more comfortable.",
+                    question2: "2. How do I book an appointment?",
+                    answer2: "Appointments are made exclusively via WhatsApp. Just send me a message to arrange the time and location.",
+                    question3: "3. I have pain or health issues, can I still get a massage?",
+                    answer3: "My massages are for relaxation and well-being, not for medical treatments. They are intended for healthy individuals.",
+                    question4: "4. Can I pay with a credit card?",
+                    answer4: "Yes, you can pay with cash, card (VISA, Mastercard, etc.), or Google Pay.",
+                    question5: "5. What are the working hours?",
+                    answer5: "I am available Monday to Friday with flexible hours. Contact me via WhatsApp to schedule an appointment.",
+                    communication: "Communication:",
+                    communicationDetail: "Please let me know your preferences and needs before the massage, such as areas that require more attention or something that should be avoided."
+                }
+            };
+    
+            // Detecta o idioma atual do localStorage ou define para 'pt'
+            let currentLanguage = localStorage.getItem("language") || "pt";
+            updateLanguage(currentLanguage);
+    
+            // Função para atualizar o idioma
+            function updateLanguage(language) {
+                currentLanguage = language;
+                localStorage.setItem("language", language);
+    
+                // Atualizar os textos principais
+                document.title = translations[language].title;
+                document.querySelector("h1").textContent = translations[language].title;
+                document.querySelector(".texto-how").innerHTML = `
+                    <strong>${translations[language].question1}</strong><br>${translations[language].answer1}<br><br>
+                    <strong>${translations[language].question2}</strong><br>${translations[language].answer2}<br><br>
+                    <strong>${translations[language].question3}</strong><br>${translations[language].answer3}<br><br>
+                    <strong>${translations[language].question4}</strong><br>${translations[language].answer4}<br><br>
+                    <strong>${translations[language].question5}</strong><br>${translations[language].answer5}<br><br>
+                    <strong>${translations[language].communication}</strong><br>${translations[language].communicationDetail}<br><br>
+                `;
+            }
+    
+            // Adicionar eventos aos botões de idioma
+            document.querySelectorAll(".languages button").forEach(button => {
+                button.addEventListener("click", () => {
+                    const language = button.textContent.toLowerCase(); // de, pt, en
+                    updateLanguage(language === "deutsch" ? "de" : language === "português" ? "pt" : "en");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

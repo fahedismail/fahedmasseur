@@ -1,0 +1,1071 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+
+    --cor-fundo-bege: #EFF2D3;
+    --cor-fundo-verde: #33492A;
+    --cor-texto-bege: #EFF2D3; 
+    --cor-texto-verde: #33492A;
+    --cor-fundo-cabecalho: #ffff;
+    --fonte-titulo-grosso: "Rubik", serif;
+}
+
+
+
+
+/* ================================
+    1. ESTILO GLOBAL (reset e fontes)
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*===============================
+-         HTML SERVICE          -
+================================*/
+
+.serviceDesktop {
+    display: none; /* Esconde o HTML desktop por padrão */
+}
+
+.service {
+    display: block; /* Exibe o HTML mobile por padrão */
+}
+
+
+body {
+    font-family: var(--fonte-titulo-grosso);
+    background-color: var(--cor-fundo-bege);
+    width: 100%;
+    
+}
+/* ================================
+    2. CABEÇALHO (header)
+=================================== */
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px -10px 10px 10px;
+    background-color: var(--cor-fundo-cabecalho);
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+header .logo-img {
+    width: 128.73px;
+    height: 78.06px;
+    margin-left: 10px; /* Deixa a logo à esquerda */
+}
+
+header .logo-img1 {
+    width: 215px;
+    height: 94px;
+    position: absolute; /* Permite centralizar a logo-img1 em relação ao header */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a logo-img1 */
+}
+
+/* ================================
+    2A. BOTÕES DE IDIOMA 
+=================================== */
+
+header .languages {
+    display: flex;
+    position: absolute; /* Fixa os botões de idioma em relação ao header */
+    top: 10px; /* Coloca os botões acima da logo */
+    right: 10px; /* Alinha os botões à direita */
+    gap: 2px; /* Espaçamento de 10px entre os botões */
+}
+
+header .languages button {
+    background-color: var(--cor-fundo-cabecalho);
+    border: none;
+    color: var(--cor-texto-verde);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+header .languages button:hover {
+    background-color: var(--cor-fundo-verde);
+    color: var(--cor-texto-bege);
+}
+
+/* ================================
+    2B. ÍCONES DO MENU
+=================================== */
+
+header .menu {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-dots {
+    display: none;
+    margin-left: 15px;
+    color: var(--cor-texto-verde);
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/* ================================
+    3. SEÇÃO DE IMAGEM (photo-section)
+=================================== */
+.photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.photo-section img {
+    width: 100%;
+    max-width: 850px;  /* Definir o tamanho máximo da imagem como 850px */
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* ================================
+    4. SEÇÃO DE TEXTO (text-section)
+=================================== */
+
+.sobre-mim.a .links,.sobre-mim.a .links a  { 
+    color: var(--cor-texto-verde);
+}
+
+.sobre-mim .links,.sobre-mim .links a  { 
+    color: var(--cor-texto-bege);
+}
+
+
+
+.text-section {
+/*background: linear-gradient(to bottom, #325738 0%, #86A186 100%);*/
+background: var(--cor-fundo-verde);
+    padding: 40px 0;
+    text-align: center;
+    height: 402px;
+
+}
+
+.text-section h1 {
+    width: 480px;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--cor-texto-bege);
+    margin: 0 auto;
+}
+
+.text-section p {
+    width: 430px;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--cor-texto-bege);
+    margin: 20px 0;
+    margin: 20px auto;
+}
+
+/* ================================
+    5. BOTÕES (buttons-section)
+=================================== */
+
+.buttons-sectionb {
+    background-color: transparent;
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 420px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button-box {
+    display: contents; /* Remove o impacto visual de .button-box */
+    
+}
+
+.text {
+    display: grid
+}
+
+.button {
+    text-align: center;
+}
+
+.button img {
+    width: 150px;
+    height: 138px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+
+.button span {
+    display: block; /* Garante que o texto fique abaixo da imagem */
+    margin-top: 1px; /* Define a margem superior do texto */
+    font-size: 20px; /* Ajuste conforme necessário */
+    font-weight: 600;
+    color: var(--cor-texto-verde); /* Altere para a cor desejada */
+}
+
+
+/* ================================
+    6. BOTÕES DE CHAMADA À AÇÃO (cta-button, cta-whatsapp)
+=================================== */
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--cor-fundo-bege);
+    color: var(--cor-texto-verde);
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: var(--cor-fundo-verde);
+    color: var(--cor-texto-bege);
+}
+
+.cta-whatsapp {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Duas colunas: imagem + número + texto */
+    grid-template-rows: auto auto; /* Duas linhas: uma para o número e outra para o texto */
+    align-items: center; /* Alinha itens verticalmente */
+    background-color: var(--cor-fundo-cabecalho);
+    color: var(--cor-texto-verde);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 5px;
+    width: 373px; /* Largura do botão */
+    height: 77px; /* Altura do botão */
+}
+
+.cta-whatsapp:hover {
+    background: var(--cor-fundo-bege);
+    color: var(--cor-texto-verde);
+}
+
+.cta-whatsapp img {
+    width: 66.47px; /* Tamanho da imagem */
+    height: 59px; /* Tamanho da imagem */
+    grid-row: span 2; /* Faz com que a imagem ocupe as duas linhas */
+    margin-right: 5px; /* Espaço entre a imagem e o número */
+}
+
+.cta-whatsapp .number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800; /* Extra bold */
+    font-size: 32px; /* Altura do número */
+    line-height: 32px; /* Para garantir altura exata do número */
+    grid-column: 2; /* Coluna 2 para o número */
+    grid-row: 1; /* Linha 1 para o número */
+    width: 310.5px;
+}
+
+.cta-whatsapp .agenda-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 25px; /* Tamanho do texto */
+    grid-column: 2; /* Coluna 2 para o texto */
+    grid-row: 2; /* Linha 2 para o texto */
+    margin-left: 18px;
+   
+}
+
+.botao-whats {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+/* ================================
+    7. SEÇÃO INSTAGRAM (instagram-section)
+=================================== */
+
+.instagram-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.instagram-logo {
+    width: 310px;
+    height: 44px;
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.instagram-section p {
+
+    color: var(--cor-texto-verde);
+    font-size: 32px;
+    font-weight: 600;
+    margin: auto;
+}
+
+/*=============================================================
+
+----------PAGINA SOBRE MIM / HOW WORK / PERGUNTA----------------
+
+===============================================================*/
+
+/* Background */
+body.body1 {
+/*    background: linear-gradient(to bottom, #325738 0%, #86A186 20%);*/
+background: var(--cor-fundo-verde);
+}
+
+/* Links */
+.links {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: var(--cor-texto-bege);
+    margin-top: 20px;
+}
+
+.links a {
+    color: var(--cor-texto-bege);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Título */
+.titulo-sobre-mim {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--cor-texto-bege);
+    margin-top: 40px;
+}
+
+
+.titulo-sobre-mim.how{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: var(--cor-texto-bege);
+} 
+
+/* Foto */
+.foto-sobre-mim {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.foto-mim {
+    max-width: 850px;
+    width: 100%;
+    height: auto;
+}
+
+/* Texto */
+.texto-sobre-mim {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: var(--cor-texto-bege);
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.texto-how  strong{
+    font-size: 1.5em; /* Ajuste o valor conforme necessário */
+    font-weight: bold; /* Isso já é padrão para <strong>, mas pode ser reforçado */
+    color: var(--cor-texto-bege);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.texto-how{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    color: var(--cor-texto-bege);
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 40px 30px 40px;
+}
+
+
+/*============================================================
+
+-----------SERVICOS---------------------------
+
+==============================================================*/
+
+
+.fundo-branco{
+padding-top: 10px;
+background: var(--cor-fundo-bege);
+padding-bottom: 30px;
+margin: 0;
+}
+
+.fundo-verde .descricao-massagem{
+    display: none; 
+}
+
+.fundo-branco  .descricao-massagem-verde{
+    display: none; 
+}
+
+
+.titulo-sobre-mim.relax{
+    margin: 0;
+    padding: 10px;
+}
+
+.titulo-sobre-mim.sueco{
+    padding-top: 20px;
+    color: var(--cor-texto-verde);
+}
+.titulo-sobre-mim.podal{
+    padding-top: 10px;
+    color: var(--cor-texto-verde);
+}
+
+.fundo-verde{
+    padding-top: 20px;
+    background-color: var(--cor-texto-verde);
+    padding-bottom: 30px;
+    
+}
+
+.precos{
+    font-size: 20px;
+    color: var(--cor-texto-bege);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.precos.verde{
+    color: var(--cor-texto-verde);
+    font-size: 20;
+    margin: 20px auto
+}
+
+.botao-agenda-verde{
+    background: var(--cor-fundo-verde);
+    color: var(--cor-texto-bege);
+    width: 252px;
+    border-radius: 30px;
+    font-size:20px ;
+    font-weight: 600px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+
+}
+
+.botao-verde{
+    color: var(--cor-texto-bege);
+    text-decoration: none;
+}
+
+.botao-agenda-text:visited{
+    color: var(--cor-texto-bege);
+    text-decoration: none;
+}
+
+
+.botao-agenda{
+    background: var(--cor-fundo-bege);
+    color: var(--cor-texto-verde);
+    width: 252px;
+    border-radius: 30px;
+    font-size:20px ;
+    font-weight: 600px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+
+
+}
+.botao-branco{
+    color: var(--cor-texto-verde);
+    text-decoration: none;
+}
+
+
+.atencao{
+    color: var(--cor-texto-verde);
+    font-size: 20px;
+    font-weight: 600px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 70px;
+
+}
+
+.atencao p{
+    color: var(--cor-texto-verde);
+}
+
+
+.botao-whatsa {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px 0;
+    padding-bottom: 100px;
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
+/*=====================================================================================
+--------------------MEDIA QUERY--------------------------------------------------------
+=======================================================================================*/
+
+@media (min-width: 850px){
+
+/*========================================================
+-                      HTML SERVICE                      -
+=========================================================*/
+
+.service {
+    display: none; /* Esconde o HTML mobile em telas maiores */
+}
+
+.serviceDesktop {
+    display: block; /* Exibe o HTML desktop em telas maiores */
+}
+
+
+    /*===========================================================
+    ------------------CABECALHO--------------------------------
+    =============================================================*/
+    
+    header { 
+        max-width: 2040px;
+        padding: 20px;
+        
+    }
+
+        
+        .logo-img1 {
+            content: url('images/logotxtdeskt.png');
+        }
+        header .logo-img1{
+            width: 521px;
+            height: 88px;
+        }
+        header .logo-img{
+            width: 187px;
+            height: 113px;
+        }
+
+        header .languages button {
+
+            font-size: 18px;
+            
+            
+        }
+
+        header .languages {
+            right: 100px; /* Alinha os botões à direita */
+        }
+        
+/*==========================================================
+--------------------PRINCIPAL-------------------------------
+===========================================================*/
+
+
+
+
+.media-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.photo-section,
+    .text-section {
+        margin: 0; /* Remover margens */
+        padding: 0; /* Remover padding */
+    }
+
+    .photo-section {
+        width: 50%; /* Definindo largura das seções em 50% */
+        padding: 0; /* Garantir que não tenha padding extra */
+        margin: 0;
+        max-width: 925px ;
+    }
+
+    .text-section {
+        width: 50%; /* Definindo largura da seção de texto */
+        height: 905.47px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .text-section h1 {
+        font-size: 58px;
+        width: 800px;
+    }
+
+
+    .text-section p {
+        font-size: 36px;
+        width: 590px;
+        line-height: 1.5;
+    }
+
+    .photo-section img {
+        max-width: 1000px;
+    }
+
+    .cta-button {
+        font-size: 36px;
+        font-weight: 800;
+        border-radius: 58px;
+        padding: 40px 20px;
+        margin-top: 120px;
+
+    }
+
+/* ------------------ Botões de Navegação */
+
+.buttons-section {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1000px;
+    gap: 35px;
+    margin: 0;
+    }
+
+    .media-principal2{
+        display: flex;
+        margin: 0 auto;
+        padding: 0 10vw;
+        max-width: 1800px ;
+    }
+
+    .principalsociais{
+            display: flex;
+            justify-content: center;
+
+}
+
+
+
+/*=============================================================
+----------------------SERVICE----------------------------------
+==============================================================*/
+
+.fundo-verde .descricao-massagem{
+    display: block; 
+    color: var(--cor-texto-bege);
+    font-size: 100px;
+}
+
+.fundo-branco .descricao-massagem-verde{
+    display: block; 
+    color: var(--cor-texto-verde);
+    font-size: 100px;
+}
+
+
+/*==================================================
+*/
+
+/* Estilo base para o body */
+.serviceDesktop {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    max-width: 1473px;
+    min-width: 1473px;
+    width: 100%;
+}
+
+/* Configuração global das seções */
+section {
+    display: grid;
+    grid-template-rows: repeat(4,180px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Estilo para fundo-verde */
+.fundo-verde {
+   /* background: linear-gradient(to bottom, #325738 0%, #86A186 100%);
+    */ 
+    background: var(--cor-fundo-verde);
+    margin: 0;
+    padding: 0;
+}
+
+.fundo-verde .foto-mim {
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+}
+
+.fundo-verde .titulo-sobre-mim {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--cor-texto-bege);
+}
+
+.titulo-sobre-mim.relax{
+    color: var(--cor-texto-bege);
+
+}
+
+.fundo-verde .descricao-massagem {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: 36px;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.fundo-verde .precos {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    font-size: 36px;
+ 
+}
+
+.fundo-verde .botao-agenda {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--cor-fundo-bege);
+    width: 460px;
+    border-radius: 58px;
+}
+
+.fundo-verde .botao-agenda a{
+    background-color: var(--cor-fundo-bege);
+    color: var(--cor-texto-verde);
+    margin: auto;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Estilo para fundo-branco */
+.fundo-branco {
+    background-color: var(--cor-fundo-bege); /* Branco */
+}
+
+.fundo-branco .foto-mim {
+    grid-row: 1 / 5;
+    grid-column: 2 / 3; /* Foto à direita */
+}
+
+.fundo-branco .titulo-sobre-mim {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; /* Título à esquerda */
+    font-size: 58px;
+    font-weight: 800;
+    color: var(--cor-texto-verde); /* Preto */
+}
+
+.fundo-branco .descricao-massagem {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2; /* Texto à esquerda */
+    font-size: 36px;
+    color: var(--cor-texto-verde);
+    align-items: center;
+    text-align: center;
+
+}
+
+.fundo-branco .precos {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; /* Preço à esquerda */
+    font-size: 36px;
+    color: var(--cor-texto-verde); /* Preto */
+}
+
+.fundo-branco .botao-agenda {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2; /* Botão à esquerda */
+    display: flex;
+    justify-content: flex-start;
+    width: 460px;
+    border-radius: 58px;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 15px 0;
+    margin: auto;
+}
+
+.fundo-branco .botao-agenda a{
+    padding: 30px 15px;
+    
+}
+
+.atencao{
+    font-size: 36px;
+    width: 1900px;
+    min-width: 1500px;
+}
+
+
+/* Botão geral */
+.botao-agenda a {
+    text-decoration: none;
+    background-color:  var(--cor-fundo-verde); /* Verde escuro */
+    color: var(--cor-texto-bege);
+    padding: 10px 20px;
+    border-radius: 58px;
+    font-size: 36px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-agenda a:hover {
+    background-color: var(--cor-fundo-verde); /* Tom mais escuro no hover */
+}
+
+.botao-whatsa {
+    display: block;       /* Torna o botão um elemento de bloco */
+    width: fit-content;   /* Ajusta a largura do botão ao conteúdo interno */
+    margin: 0 auto; 
+   
+}
+
+footer {
+    display: block;
+}
+
+footer .buttons-sectiona {
+    background-color: transparent;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+
+/*======================================================================
+-                          Sobre mim
+======================================================================*/
+
+
+.sobre-mim.desktop{
+    padding-top: 100px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,500px);
+    grid-template-rows: auto; /* Altura automática */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px;
+    max-width: 2142px;
+    margin: 0 auto;
+}
+
+.foto-sobre-mim {
+    grid-column: 1 / 2; /* Primeira coluna */
+    grid-row: 1 / 4; /* Ocupa da linha 1 à 4 */
+    display: flex; /* Centraliza a imagem no container */
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-mim.pc {
+    max-width: 700px; /* Ajusta a largura da imagem para não ultrapassar o container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas, opcional */
+}
+
+.titulo-sobre-mim.pc{
+    grid-column: 2 / 3;
+    grid-row: -2/ -1;  
+    font-size: 58px;
+}
+
+.texto-sobre-mim.pc{
+    grid-column: 2 / 3;
+    grid-row: 2/ 4; 
+    font-size: 36px; 
+    max-width: 1160px;
+    width: auto;
+}
+
+.botao-whats.pc{
+    grid-column: 2 / 3;
+    grid-row: 4/5;
+}
+
+
+/*===============================================================
+-                   how works
+================================================================*/
+
+
+.sobre-mim.how{
+    padding-top: 100px;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(4,500px);
+    grid-template-rows: auto; /* Altura automática */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px;
+    max-width: 2142px;
+    margin: 0 auto;
+}
+
+.titulo-sobre-mim.how.pc{
+    grid-column: 1 / 4;
+    grid-row: 1/ 2;  
+    font-size: 58px;
+}
+
+.titulo-sobre-mim.how{
+    max-width: 1650px;
+}
+
+.texto-how.pc{
+    grid-column: 2 / 3;
+    grid-row: 2/ 4; 
+    font-size: 36px; 
+}
+
+.texto-how{
+    max-width: 1450px;
+    min-width: 1200px;
+}
+
+.botao-whats.how.pc{
+    grid-column: 2 / 3;
+    grid-row: 4/5;
+}
+
+/*==============================================================
+-                    PERGUNTAS
+===============================================================*/
+
+
+.sobre-mim.ask{
+    padding-top: 100px;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(4,500px);
+    grid-template-rows: auto; /* Altura automática */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px;
+    max-width: 2142px;
+    margin: 0 auto;
+}
+
+.titulo-sobre-mim.how.ask{
+    grid-column: 1 / 4;
+    grid-row: 1/ 2;  
+    font-size: 58px;
+}
+
+.titulo-sobre-mim.how.ask{
+    max-width: 1650px;
+}
+
+.texto-how.ask{
+    grid-column: 2 / 3;
+    grid-row: 2/ 4; 
+    font-size: 36px; 
+}
+
+.texto-how.ask{
+    max-width: 1650px;
+    min-width: 1400px;
+    margin: 0 auto;
+}
+
+.botao-whats.ask{
+    grid-column: 2 / 3;
+    grid-row: 4/5;
+}
+
+.links{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
