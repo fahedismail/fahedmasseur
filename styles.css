@@ -561,6 +561,56 @@ footer{
     display: none;
 }
 
+/*=====================================================================
+-                           footer
+=====================================================================*/
+
+/* Rodapé compactado e alinhado horizontalmente (apenas para .footer-impressum) */
+footer.footer-impressum {
+    background-color: var(--cor-fundo-verde);  /* Cor de fundo verde */
+    color: var(--cor-texto-bege);               /* Cor do texto bege */
+    display: flex;
+    justify-content: space-between;             /* Distribui o conteúdo de forma compacta */
+    align-items: center;                        /* Alinha o conteúdo verticalmente */
+    padding: 10px 20px;                         /* Espaçamento reduzido para um rodapé compacto */
+    font-size: 12px;                            /* Tamanho de fonte pequeno */
+    width: 100%;
+}
+
+/* Ajuste no layout para garantir que o rodapé fique pequeno e organizado */
+footer.footer-impressum h1, footer.footer-impressum h2 {
+    font-size: 14px; /* Tamanho de fonte reduzido */
+    margin: 0;       /* Remove margens extras */
+}
+
+/* Alinhamento dos itens no rodapé */
+footer.footer-impressum p, footer.footer-impressum a {
+    margin: 0 5px;   /* Margem entre os itens para maior compactação */
+    padding: 0;
+    font-size: 12px;
+}
+
+footer.footer-impressum .contact-info, footer.footer-impressum .eu-dispute {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer.footer-impressum .contact-info p, footer.footer-impressum .eu-dispute p {
+    margin: 2px 0;  /* Ajusta o espaçamento entre os elementos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*=====================================================================================
 --------------------MEDIA QUERY--------------------------------------------------------
 =======================================================================================*/
