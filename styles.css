@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url("https://use.typekit.net/xsj7fkm.css");
 :root{
 
-    --cor-fundo-bege: #EFF2D3;
-    --cor-fundo-verde: #33492A;
-    --cor-texto-bege: #EFF2D3; 
-    --cor-texto-verde: #33492A;
-    --cor-fundo-cabecalho: #ffff;
-    --fonte-titulo-grosso: "Rubik", serif;
+    --cor-fundo-bege: #ffffff;
+    --cor-fundo-verde: #51a6f5;
+    --cor-texto-bege: #ffffff; 
+    --cor-texto-verde: #475459;
+    --cor-fundo-cabecalho: #51a6f5;
+    --fonte-titulo-grosso: "poppins", sans-serif;
 }
 
 
@@ -39,37 +39,47 @@ body {
     font-family: var(--fonte-titulo-grosso);
     background-color: var(--cor-fundo-bege);
     width: 100%;
+    justify-content: center;
+    align-items: center;
     
 }
 /* ================================
     2. CABEÇALHO (header)
 =================================== */
 
-header {
-    margin: 0 auto;
+nav .logo-img, nav .logo-img1 {
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 60px;
+    max-height: 100px;
+}
+
+
+nav {
+    margin: auto;
     display: flex;
     justify-content: center;
-    padding: 10px -10px 10px 10px;
     background-color: var(--cor-fundo-cabecalho);
     position: relative;
     width: 100%;
     max-width: 850px;
+    flex-wrap: wrap;
 }
 
-header .logo {
+nav .logo {
     display: flex;
     align-items: center;
     position: relative;
     width: 100%;
 }
 
-header .logo-img {
+nav .logo-img {
     width: 128.73px;
     height: 78.06px;
     margin-left: 10px; /* Deixa a logo à esquerda */
 }
 
-header .logo-img1 {
+nav .logo-img1 {
     width: 215px;
     height: 94px;
     position: absolute; /* Permite centralizar a logo-img1 em relação ao header */
@@ -81,7 +91,7 @@ header .logo-img1 {
     2A. BOTÕES DE IDIOMA 
 =================================== */
 
-header .languages {
+nav .languages {
     display: flex;
     position: absolute; /* Fixa os botões de idioma em relação ao header */
     top: 10px; /* Coloca os botões acima da logo */
@@ -89,31 +99,28 @@ header .languages {
     gap: 2px; /* Espaçamento de 10px entre os botões */
 }
 
-header .languages button {
+nav .languages button {
     background-color: var(--cor-fundo-cabecalho);
     border: none;
-    color: var(--cor-texto-verde);
-    font-size: 14px;
-    font-weight: bold;
     padding: 5px 5px;
     cursor: pointer;
 }
 
-header .languages button:hover {
-    background-color: var(--cor-fundo-verde);
-    color: var(--cor-texto-bege);
+.flag{
+    max-width: 25px;
+    height: auto;
 }
 
 /* ================================
     2B. ÍCONES DO MENU
 =================================== */
 
-header .menu {
+nav .menu {
     display: flex;
     align-items: center;
 }
 
-header .menu-dots {
+nav .menu-dots {
     display: none;
     margin-left: 15px;
     color: var(--cor-texto-verde);
@@ -151,55 +158,48 @@ header .menu-dots {
 }
 
 .sobre-mim .links,.sobre-mim .links a  { 
-    color: var(--cor-texto-bege);
+    color: var(--cor-texto-verde);
 }
 
 
 
 .text-section {
 /*background: linear-gradient(to bottom, #325738 0%, #86A186 100%);*/
-background: var(--cor-fundo-verde);
+background: var(--cor-fundo-bege);
     padding: 40px 0;
     text-align: center;
     height: 402px;
+    margin: 0 auto;
 
 }
 
 .text-section h1 {
-    width: 480px;
+    max-width: 400px;
     font-size: 35px;
     font-weight: 800;
-    color: var(--cor-texto-bege);
+    color: var(--cor-texto-verde);
     margin: 0 auto;
 }
 
 .text-section p {
-    width: 430px;
+    max-width: 320px;
     font-size: 25px;
     font-weight: 400;
-    color: var(--cor-texto-bege);
+    color: var(--cor-texto-verde);
     margin: 20px 0;
     margin: 20px auto;
+}
+
+.text-section a img{
+    margin: 0 auto;
+    max-width: 350px;
+    justify-content: center;
 }
 
 /* ================================
     5. BOTÕES (buttons-section)
 =================================== */
 
-.buttons-sectionb {
-    background-color: transparent;
-    padding: 30px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 450px;
-    max-height: 420px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 .button-box {
     display: contents; /* Remove o impacto visual de .button-box */
@@ -230,83 +230,41 @@ background: var(--cor-fundo-verde);
     color: var(--cor-texto-verde); /* Altere para a cor desejada */
 }
 
+.btn-german {
+    background: transparent; /* Remove o fundo */
+    border: none; /* Remove as bordas */
+    outline: none; /* Remove o contorno de foco */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove margens externas */
+    cursor: pointer; /* Garante que o cursor de ponteiro seja exibido */
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.button-container a img{
+max-width: 350px;
+}
+
+.container-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: var(--cor-fundo-verde);
+}
+
 
 /* ================================
     6. BOTÕES DE CHAMADA À AÇÃO (cta-button, cta-whatsapp)
 =================================== */
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--cor-fundo-bege);
-    color: var(--cor-texto-verde);
-    font-size: 25px;
-    font-weight: 600;
-    padding: 15px 15px;
-    border-radius: 25px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.cta-button:hover {
-    background: var(--cor-fundo-verde);
-    color: var(--cor-texto-bege);
-}
-
-.cta-whatsapp {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Duas colunas: imagem + número + texto */
-    grid-template-rows: auto auto; /* Duas linhas: uma para o número e outra para o texto */
-    align-items: center; /* Alinha itens verticalmente */
-    background-color: var(--cor-fundo-cabecalho);
-    color: var(--cor-texto-verde);
-    font-size: 20px;
-    font-weight: 600;
-    padding: 10px 15px;
-    border-radius: 50px;
-    text-decoration: none;
-    margin-top: 5px;
-    width: 373px; /* Largura do botão */
-    height: 77px; /* Altura do botão */
-}
-
-.cta-whatsapp:hover {
-    background: var(--cor-fundo-bege);
-    color: var(--cor-texto-verde);
-}
-
-.cta-whatsapp img {
-    width: 66.47px; /* Tamanho da imagem */
-    height: 59px; /* Tamanho da imagem */
-    grid-row: span 2; /* Faz com que a imagem ocupe as duas linhas */
-    margin-right: 5px; /* Espaço entre a imagem e o número */
-}
-
-.cta-whatsapp .number {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800; /* Extra bold */
-    font-size: 32px; /* Altura do número */
-    line-height: 32px; /* Para garantir altura exata do número */
-    grid-column: 2; /* Coluna 2 para o número */
-    grid-row: 1; /* Linha 1 para o número */
-    width: 310.5px;
-}
-
-.cta-whatsapp .agenda-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600; /* Semi-bold */
-    font-size: 25px; /* Tamanho do texto */
-    grid-column: 2; /* Coluna 2 para o texto */
-    grid-row: 2; /* Linha 2 para o texto */
-    margin-left: 18px;
-   
-}
-
-.botao-whats {
-    display: flex;
-    justify-content: center;
-    
-    
-}
 
 /* ================================
     7. SEÇÃO INSTAGRAM (instagram-section)
@@ -557,55 +515,26 @@ margin: 0;
     display: none;
 }
 
-footer{
-    display: none;
-}
 
 /*=====================================================================
 -                           footer
 =====================================================================*/
 
-/* Rodapé compactado e alinhado horizontalmente (apenas para .footer-impressum) */
-footer.footer-impressum {
-    background-color: var(--cor-fundo-verde);  /* Cor de fundo verde */
-    color: var(--cor-texto-bege);               /* Cor do texto bege */
+footer{
+    margin: 0 auto;
+    justify-content: center;
     display: flex;
-    justify-content: space-between;             /* Distribui o conteúdo de forma compacta */
-    align-items: center;                        /* Alinha o conteúdo verticalmente */
-    padding: 10px 20px;                         /* Espaçamento reduzido para um rodapé compacto */
-    font-size: 12px;                            /* Tamanho de fonte pequeno */
-    width: 100%;
 }
 
-/* Ajuste no layout para garantir que o rodapé fique pequeno e organizado */
-footer.footer-impressum h1, footer.footer-impressum h2 {
-    font-size: 14px; /* Tamanho de fonte reduzido */
-    margin: 0;       /* Remove margens extras */
-}
-
-/* Alinhamento dos itens no rodapé */
-footer.footer-impressum p, footer.footer-impressum a {
-    margin: 0 5px;   /* Margem entre os itens para maior compactação */
-    padding: 0;
-    font-size: 12px;
-}
-
-footer.footer-impressum .contact-info, footer.footer-impressum .eu-dispute {
+.footer-links ul{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 10 auto;
+    max-width: 500px;
+    gap: 20px;
+    padding: 10px;
 }
-
-footer.footer-impressum .contact-info p, footer.footer-impressum .eu-dispute p {
-    margin: 2px 0;  /* Ajusta o espaçamento entre os elementos */
-}
-
-
-
-
-
-
-
 
 
 
@@ -627,16 +556,20 @@ footer.footer-impressum .contact-info p, footer.footer-impressum .eu-dispute p {
 
 .serviceDesktop {
     display: block; /* Exibe o HTML desktop em telas maiores */
+    max-width: 1844px;
 }
 
 
     /*===========================================================
     ------------------CABECALHO--------------------------------
     =============================================================*/
-    
-    header { 
-        max-width: 2040px;
-        padding: 20px;
+
+
+    .nav { 
+        max-width: 1844px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
         
     }
 
@@ -644,30 +577,35 @@ footer.footer-impressum .contact-info p, footer.footer-impressum .eu-dispute p {
         .logo-img1 {
             content: url('images/logotxtdeskt.png');
         }
-        header .logo-img1{
+        nav .logo-img1{
             width: 521px;
             height: 88px;
         }
-        header .logo-img{
+        nav .logo-img{
             width: 187px;
             height: 113px;
         }
 
-        header .languages button {
+        nav .languages button {
 
             font-size: 18px;
             
             
         }
 
-        header .languages {
+        nav .languages {
             right: 100px; /* Alinha os botões à direita */
         }
         
 /*==========================================================
 --------------------PRINCIPAL-------------------------------
 ===========================================================*/
-
+main{
+    max-width: 1844px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
 
 
 
@@ -721,39 +659,68 @@ footer.footer-impressum .contact-info p, footer.footer-impressum .eu-dispute p {
     .photo-section img {
         max-width: 1000px;
     }
-
-    .cta-button {
-        font-size: 36px;
-        font-weight: 800;
-        border-radius: 58px;
-        padding: 40px 20px;
-        margin-top: 120px;
-
-    }
-
-/* ------------------ Botões de Navegação */
-
-.buttons-section {
-    display: flex;
-    justify-content: flex-start;
-    max-width: 1000px;
-    gap: 35px;
-    margin: 0;
-    }
-
-    .media-principal2{
+    
+    .btn-whatsapp {
         display: flex;
-        margin: 0 auto;
-        padding: 0 10vw;
-        max-width: 1800px ;
+        justify-content: center;
+        align-items: center;
+        width: 100px; /* Ajuste o tamanho do botão de WhatsApp conforme necessário */
     }
 
-    .principalsociais{
-            display: flex;
-            justify-content: center;
+    .button-container{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin: 0 auto;
+    }
 
+    .container-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: var(--cor-fundo-verde);
+        padding: 50px 0;
+        max-width: 1844px;
+    }
+
+    .btn-german {
+        background: transparent; /* Remove o fundo */
+        border: none; /* Remove as bordas */
+        outline: none; /* Remove o contorno de foco */
+        padding: 0; /* Remove o espaçamento interno */
+        margin: 0; /* Remove margens externas */
+        cursor: pointer; /* Garante que o cursor de ponteiro seja exibido */
+    }
+
+/*============================================================
+-                  Rodape
+=============================================================*/
+footer{
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1844px;
 }
 
+.footer-links{
+    background: var(--cor-fundo-bege);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    margin: 20px 0;
+    max-width: 1844px;
+}
+
+.footer-links ul{
+    background: var(--cor-fundo-bege);
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 20px 0;
+}
 
 
 /*=============================================================
