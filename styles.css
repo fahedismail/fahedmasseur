@@ -433,15 +433,23 @@ margin: 0;
 
 
 .titulo-sobre-mim.relax{
-    margin: 0;
+    margin: 0 auto;
     padding: 10px;
+    font-size: 30px;
+}
+.titulo-sobre-mim.pinda{
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 27px;
 }
 
 .titulo-sobre-mim.sueco{
+    margin: 0 auto;
     padding-top: 20px;
     color: var(--cor-texto-verde);
 }
 .titulo-sobre-mim.podal{
+    margin: 0 auto;
     padding-top: 10px;
     color: var(--cor-texto-verde);
 }
