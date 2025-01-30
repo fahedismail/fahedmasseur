@@ -7,425 +7,261 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Conteúdo Mobile -->
-    <div class="service">
-        <header class="header1">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Logo à esquerda -->
-                </a>
-                <img src="images/logotxt.png" alt="Logo2" class="logo-img1"> <!-- Logo centralizada -->
+    <!-- Cabeçalho -->
+     <div class="service">
+
+         <nav class="nav">
+             <div class="logo">
+                 <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
+                 <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
             </div>
             <div class="menu">
                 <span class="languages">
-                    <button data-lang="de">Deutsch</button>
-                    <button data-lang="pt">Português</button>
-                    <button data-lang="en">English</button>
+                    <button aria-label="Alterar para Alemão">
+                        <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
+                    </button>
+                    <button aria-label="Alterar para Português">
+                        <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
+                    </button>
+                    <button aria-label="Alterar para Inglês">
+                        <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
+                    </button>
                 </span>
-                <div class="menu-dots">
-                    <img src="images/menu.png" alt="menulinhas" class="menu-img">
+            </div>
+            
+        </nav>
+        <main>
+            
+            <!-- Seção Sobre Mim - Mobile -->
+            <section class="sobre-mim a">
+                <!-- Links -->
+                <div class="links">
+                    <a href="index.html">Startseite</a> / 
+                    <a href="#servicos">Dienstleistungen</a>
                 </div>
-            </div>
-        </header>
-
-        <!-- Seção Sobre Mim - Mobile -->
-        <section class="sobre-mim a">
-            <!-- Links -->
-            <div class="links">
-                <a href="index.html">Início</a> / 
-                <a href="#servicos">Servicos</a>
-            </div>
-            <!-- Massagem Relaxamento -->
-            <section class="fundo-verde">
-                <h1 class="titulo-sobre-mim relax">Massagem Relaxamento</h1>
-                <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
-                <p class="descricao-massagem relax"></p>
-                <p class="precos relax">
-                    30 minutos - 45€<br>
-                    1 hora - 60€<br>
-                    1 hora 30 minutos - 100€
-                </p>
-                <section class="botao-agenda relax">
-                    <a href="https://wa.me/+491637977580" class="botao-branco">
-                        <span class="agenda-text">Faça seu agendamento</span>
-                    </a>
+                <!-- Massagem Relaxamento -->
+                <section class="fundo-verde">
+                    <h1 class="titulo-sobre-mim relax">Entspannungsmassage</h1>
+                    <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
+                    <p class="descricao-massagem relax"></p>
+                    <p class="precos relax">
+                        30 Minuten - 45€<br>
+                        1 Stunde - 60€<br>
+                        1 Stunde 30 Minuten - 100€
+                    </p>
+                    <section class="botao-agenda relax">
+                        <a href="https://wa.me/+491637977580" class="botao-branco">
+                            <span class="agenda-text">Massage buchen</span>
+                        </a>
+                    </section>
                 </section>
-            </section>
-
-            <!-- Massagem Sueco -->
-            <section class="fundo-branco">
-                <h1 class="titulo-sobre-mim sueco">Massagem Sueco</h1>
-                <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
-                <p class="descricao-massagem-verde sueco"></p>
-                <p class="precos verde sueco">
-                    30 minutos - 45€<br>
-                    1 hora - 60€<br>
-                    1 hora 30 minutos - 100€
-                </p>
-                <section class="botao-agenda-verde sueco">
-                    <a href="https://wa.me/+491637977580" class="botao-verde">
-                        <span class="agenda-text">Faça seu agendamento</span>
-                    </a>
+                
+                <!-- Massagem Sueco -->
+                <section class="fundo-branco">
+                    <h1 class="titulo-sobre-mim sueco">Schwedische Massage</h1>
+                    <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
+                    <p class="descricao-massagem-verde sueco"></p>
+                    <p class="precos verde sueco">
+                        30 Minuten - 45€<br>
+                        1 Stunde - 60€<br>
+                        1 Stunde 30 Minuten - 100€
+                    </p>
+                    <section class="botao-agenda-verde sueco">
+                        <a href="https://wa.me/+491637977580" class="botao-verde">
+                            <span class="agenda-text">Massage buchen</span>
+                        </a>
+                    </section>
                 </section>
-            </section>
-
-            <!-- Massagem Profunda -->
-            <section class="fundo-verde">
-                <h1 class="titulo-sobre-mim profunda">Massagem Profunda</h1>
-                <img src="images/profunda.png" alt="Foto de massagem profunda" class="foto-mim">
-                <p class="descricao-massagem profunda"></p>
-                <p class="precos">
-                    30 minutos - 45€<br>
-                    1 hora - 60€<br>
-                    1 hora 30 minutos - 100€
-                </p>
-                <section class="botao-agenda">
-                    <a href="https://wa.me/+491637977580" class="botao-branco">
-                        <span class="agenda-text">Faça seu agendamento</span>
-                    </a>
-                </section>
-            </section>
-
-            <!-- Massagem Podal -->
-            <section class="fundo-branco">
-                <h1 class="titulo-sobre-mim podal">Massagem Podal</h1>
-                <img src="images/podal.png" alt="Foto de massagem podal" class="foto-mim">
-                <p class="descricao-massagem-verde podal"></p>
-                <p class="precos verde">
-                    30 minutos - 45€
-                </p>
-                <section class="botao-agenda-verde">
-                    <a href="https://wa.me/+491637977580" class="botao-verde">
-                        <span class="agenda-text">Faça seu agendamento</span>
-                    </a>
-                </section>
-            </section>
-
-            <!-- Massagem Pindas Chinesa -->
-            <section class="fundo-verde">
-                <h1 class="titulo-sobre-mim profunda">Massagem Pindas Chinesa</h1>
-                <img src="images/pindas.png" alt="Foto de massagem pindas chinesa" class="foto-mim">
-                <p class="descricao-massagem pindas"></p>
-                <p class="precos">
-                    1 hora - 80€<br>
-                    1 hora 30 minutos - 120€<br>
-                    2 horas - 150€
-                </p>
-                <section class="botao-agenda">
-                    <a href="https://wa.me/+491637977580" class="botao-branco">
-                        <span class="agenda-text">Faça seu agendamento</span>
-                    </a>
-                </section>
-            </section>
-        </section>
-    </div>
-
-    <!-- Conteúdo Desktop -->
-    <div class="serviceDesktop">
-        <header class="header1">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Logo à esquerda -->
-                </a>
-                <img src="images/logotxt.png" alt="Logo2" class="logo-img1"> <!-- Logo centralizada -->
-            </div>
-            <div class="menu">
-                <span class="languages">
-                    <span class="languages">
-                        <button data-lang="de">Deutsch</button>
-                        <button data-lang="pt">Português</button>
-                        <button data-lang="en">English</button>
-                    </span>
-                    
-                </span>
-                <div class="menu-dots">
-                    <img src="images/menu.png" alt="menulinhas" class="menu-img">
-                </div>
-            </div>
-        </header>
-        
-        <!-- Massagem Relaxamento -->
-        <section class="fundo-verde">
-            <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
-            <h1 class="titulo-sobre-mim relax">Massagem Relaxamento</h1>
-            <p class="descricao-massagem relax">A massagem relaxante ajuda a aliviar o estresse e a tensão.</p>
-            <p class="precos relax">
-                30 minutos - 45€<br>
-                1 hora - 60€<br>
-                1 hora 30 minutos - 100€
-            </p>
-            <section class="botao-agenda relax">
-                <a href="https://wa.me/+491637977580" class="botao-branco">
-                    <span class="agenda-text">Faça seu agendamento</span>
-                </a>
-            </section>
-        </section>
-
-        <!-- Massagem Sueco -->
-        <section class="fundo-branco">
-            <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
-            <h1 class="titulo-sobre-mim sueco">Massagem Sueco</h1>
-            <p class="descricao-massagem sueco">A massagem sueca promove circulação e relaxamento profundo.</p>
-            <p class="precos verde sueco">
-                30 minutos - 45€<br>
-                1 hora - 60€<br>
-                1 hora 30 minutos - 100€
-            </p>
-            <section class="botao-agenda sueco">
-                <a href="https://wa.me/+491637977580" class="botao-verde">
-                    <span class="agenda-text">Faça seu agendamento</span>
-                </a>
-            </section>
-        </section>
-
+                
         <!-- Massagem Profunda -->
         <section class="fundo-verde">
+            <h1 class="titulo-sobre-mim profunda">Tiefenmassage</h1>
             <img src="images/profunda.png" alt="Foto de massagem profunda" class="foto-mim">
-            <h1 class="titulo-sobre-mim profunda">Massagem Profunda</h1>
-            <p class="descricao-massagem profunda">A massagem profunda é ideal para aliviar tensões musculares acumuladas.</p>
+            <p class="descricao-massagem profunda"></p>
             <p class="precos">
-                30 minutos - 45€<br>
-                1 hora - 60€<br>
-                1 hora 30 minutos - 100€
+                30 Minuten - 45€<br>
+                1 Stunde - 60€<br>
+                1 Stunde 30 Minuten - 100€
             </p>
             <section class="botao-agenda">
                 <a href="https://wa.me/+491637977580" class="botao-branco">
-                    <span class="agenda-text">Faça seu agendamento</span>
+                    <span class="agenda-text">Massage buchen</span>
                 </a>
             </section>
         </section>
-
+        
         <!-- Massagem Podal -->
         <section class="fundo-branco">
+            <h1 class="titulo-sobre-mim podal">Fußmassage</h1>
             <img src="images/podal.png" alt="Foto de massagem podal" class="foto-mim">
-            <h1 class="titulo-sobre-mim podal">Massagem Podal</h1>
-            <p class="descricao-massagem podal">Massagem nos pés que promove relaxamento e bem-estar.</p>
+            <p class="descricao-massagem-verde podal"></p>
             <p class="precos verde">
-                30 minutos - 45€
+                30 Minuten - 45€
             </p>
-            <section class="botao-agenda">
+            <section class="botao-agenda-verde">
                 <a href="https://wa.me/+491637977580" class="botao-verde">
-                    <span class="agenda-text">Faça seu agendamento</span>
+                    <span class="agenda-text">Massage buchen</span>
                 </a>
             </section>
         </section>
-
+        
         <!-- Massagem Pindas Chinesa -->
         <section class="fundo-verde">
+            <h1 class="titulo-sobre-mim profunda">Kräuterstempelmassage</h1>
             <img src="images/pindas.png" alt="Foto de massagem pindas chinesa" class="foto-mim">
-            <h1 class="titulo-sobre-mim profunda">Massagem Pindas Chinesa</h1>
-            <p class="descricao-massagem pindas">Massagem com pindas aromáticas para relaxamento profundo e energização.</p>
+            <p class="descricao-massagem pindas"></p>
             <p class="precos">
-                1 hora - 80€<br>
-                1 hora 30 minutos - 120€<br>
-                2 horas - 150€
+                1 Stunde - 80€<br>
+                1 Stunde 30 Minuten - 120€<br>
+                2 Stunden - 150€
             </p>
             <section class="botao-agenda">
                 <a href="https://wa.me/+491637977580" class="botao-branco">
-                    <span class="agenda-text">Faça seu agendamento</span>
+                    <span class="agenda-text">Massage buchen</span>
                 </a>
             </section>
         </section>
-    </div>
-
-    <p class="atencao">
-        Atenção: Serviço voltado exclusivamente para o bem-estar. Não realizo massagens terapêuticas, tratamentos ou procedimentos para cura de dores.
-    </p>
-
-    <section class="botao-whatsa">
-        <a href="https://wa.me/+491637977580" class="cta-whatsapp">
-            <img src="images/whatsapp.png" alt="WhatsApp">
-            <span class="number">+49 163 7977580</span>
-            <span class="agenda-text">Agenda sua massagem</span>
-        </a>
+        
     </section>
+</section>
+</div>
+</main>
+</div>
 
-    <footer class="fundo-verde">
-        <section class="media-principal2">
-            <section class="buttons-sectiona">
-                <div class="button-box">
-                    <div class="button">
-                        <a href="service.html">
-                            <img src="images/service.png" alt="Serviços">
-                            <span>Serviços</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="sobremim.html">
-                            <img src="images/sobre mim.png" alt="Sobre Mim">
-                            <span>Sobre mim</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="button-box">
-                    <div class="button">
-                        <a href="howwork.html">
-                            <img src="images/howwork.png" alt="Como Funciona">
-                            <span>Como Funciona?</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="pergunta.html">
-                            <img src="images/pergunta.png" alt="Perguntas Frequentes">
-                            <span>Perguntas Frequentes</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
+       <!-- Conteúdo Desktop -->
+<div class="serviceDesktop">
+    
+    <nav class="nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
+            <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
+       </div>
+       <div class="menu">
+           <span class="languages">
+               <button aria-label="Alterar para Alemão">
+                   <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
+               </button>
+               <button aria-label="Alterar para Português">
+                   <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
+               </button>
+               <button aria-label="Alterar para Inglês">
+                   <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
+               </button>
+           </span>
+       </div>
+       
+   </nav>
+    <!-- Links -->
+    <div class="links-azul">
+        <a href="index.html">Startseite</a> / 
+        <a href="#servicos">Dienstleistungen</a>
+    </div>
+   
+    <!-- Massagem Relaxamento -->
+    <section class="fundo-verde">
+        <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
+        <h1 class="titulo-sobre-mim relax">Entspannungsmassage</h1>
+        <p class="descricao-massagem relax">Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.</p>
+        <p class="precos relax">
+            30 Minuten - 45€<br>
+            1 Stunde - 60€<br>
+            1 Stunde 30 Minuten - 100€
+        </p>
+        <section class="botao-agenda relax">
+            <a href="https://wa.me/+491637977580" class="botao-branco">
+                <span class="agenda-text">Massage buchen</span>
+            </a>
         </section>
-    </footer>
-    <footer class="footer-impressum">
-        <div class="contact-info">
-            <h1>Impressum</h1>
-            <p>muhieddine esberard<br />
-            Fahed Masseur<br />
-            aldebaranstraße 16<br />
-            12529 Schönefeld</p>
-            <p>Telefon: +4917640150495<br />
-            E-Mail: hido.merreden@hotmail.com</p>
-            <p>USt-IdNr: 04921703975</p>
-        </div>
+    </section>
     
-        <div class="eu-dispute">
-            <h2>EU-Streitschlichtung</h2>
-            <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
-            <h2>Verbraucherstreitbeilegung</h2>
-            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren teilzunehmen.</p>
-        </div>
-    </footer>
+    <!-- Massagem Sueco -->
+    <section class="fundo-branco">
+        <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
+        <h1 class="titulo-sobre-mim sueco">Schwedische Massage</h1>
+        <p class="descricao-massagem sueco">Die schwedische Massage fördert die Durchblutung und tiefe Entspannung.</p>
+        <p class="precos verde sueco">
+            30 Minuten - 45€<br>
+            1 Stunde - 60€<br>
+            1 Stunde 30 Minuten - 100€
+        </p>
+        <section class="botao-agenda sueco">
+            <a href="https://wa.me/+491637977580" class="botao-verde">
+                <span class="agenda-text">Massage buchen</span>
+            </a>
+        </section>
+    </section>
     
-    <script>
-        // Função para alternar o idioma
-        function changeLanguage(lang) {
-            const translations = {
-                "de": {
-                    "relaxTitle": "Entspannungsmassage",
-                    "relaxDesc": "Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.",
-                    "relaxPrice": "30 Minuten - 45€<br>1 Stunde - 60€<br>1 Stunde 30 Minuten - 100€",
-                    "suecoTitle": "Schwedenmassage",
-                    "suecoDesc": "Die Schwedenmassage fördert die Blutzirkulation und tiefe Entspannung.",
-                    "suecoPrice": "30 Minuten - 45€<br>1 Stunde - 60€<br>1 Stunde 30 Minuten - 100€",
-                    "profundaTitle": "Tiefenmassage",
-                    "profundaDesc": "Die Tiefenmassage ist ideal, um angesammelte Muskelverspannungen zu lösen.",
-                    "profundaPrice": "30 Minuten - 45€<br>1 Stunde - 60€<br>1 Stunde 30 Minuten - 100€",
-                    "podalTitle": "Fußmassage",
-                    "podalDesc": "Fußmassage zur Förderung von Entspannung und Wohlbefinden.",
-                    "podalPrice": "30 Minuten - 45€",
-                    "pindasTitle": "Chinesische Pindas-Massage",
-                    "pindasDesc": "Massage mit aromatischen Pindas für tiefe Entspannung und Energetisierung.",
-                    "pindasPrice": "1 Stunde - 80€<br>1 Stunde 30 Minuten - 120€<br>2 Stunden - 150€",
-                    "atencaoText": "Achtung: Der Service ist ausschließlich auf das Wohlbefinden ausgerichtet. Ich biete keine therapeutischen Massagen, Behandlungen oder Verfahren zur Schmerzlinderung an"
-                },
-                "pt": {
-                    "relaxTitle": "Massagem Relaxamento",
-                    "relaxDesc": "A massagem relaxante ajuda a aliviar o estresse e a tensão.",
-                    "relaxPrice": "30 minutos - 45€<br>1 hora - 60€<br>1 hora 30 minutos - 100€",
-                    "suecoTitle": "Massagem Sueco",
-                    "suecoDesc": "A massagem sueca promove circulação e relaxamento profundo.",
-                    "suecoPrice": "30 minutos - 45€<br>1 hora - 60€<br>1 hora 30 minutos - 100€",
-                    "profundaTitle": "Massagem Profunda",
-                    "profundaDesc": "A massagem profunda é ideal para aliviar tensões musculares acumuladas.",
-                    "profundaPrice": "30 minutos - 45€<br>1 hora - 60€<br>1 hora 30 minutos - 100€",
-                    "podalTitle": "Massagem Podal",
-                    "podalDesc": "Massagem nos pés que promove relaxamento e bem-estar.",
-                    "podalPrice": "30 minutos - 45€",
-                    "pindasTitle": "Massagem Pindas Chinesa",
-                    "pindasDesc": "Massagem com pindas aromáticas para relaxamento profundo e energização.",
-                    "pindasPrice": "1 hora - 80€<br>1 hora 30 minutos - 120€<br>2 horas - 150€",
-                    "atencaoText": " Atenção: Serviço voltado exclusivamente para o bem-estar. Não realizo massagens terapêuticas, tratamentos ou procedimentos para cura de dores."
-                },
-                "en": {
-                    "relaxTitle": "Relaxation Massage",
-                    "relaxDesc": "The relaxation massage helps to relieve stress and tension.",
-                    "relaxPrice": "30 minutes - 45€<br>1 hour - 60€<br>1 hour 30 minutes - 100€",
-                    "suecoTitle": "Swedish Massage",
-                    "suecoDesc": "The Swedish massage promotes circulation and deep relaxation.",
-                    "suecoPrice": "30 minutes - 45€<br>1 hour - 60€<br>1 hour 30 minutes - 100€",
-                    "profundaTitle": "Deep Massage",
-                    "profundaDesc": "The deep massage is ideal for relieving accumulated muscle tension.",
-                    "profundaPrice": "30 minutes - 45€<br>1 hour - 60€<br>1 hour 30 minutes - 100€",
-                    "podalTitle": "Foot Massage",
-                    "podalDesc": "Foot massage that promotes relaxation and well-being.",
-                    "podalPrice": "30 minutes - 45€",
-                    "pindasTitle": "Chinese Pindas Massage",
-                    "pindasDesc": "Massage with aromatic pindas for deep relaxation and energization.",
-                    "pindasPrice": "1 hour - 80€<br>1 hour 30 minutes - 120€<br>2 hours - 150€",
-                    "atencaoText": "AAttention: This service is exclusively focused on well-being. I do not provide therapeutic massages, treatments, or procedures for pain relief."
-                }
-            };
+    <!-- Massagem Profunda -->
+    <section class="fundo-verde">
+        <img src="images/profunda.png" alt="Foto de massagem profunda" class="foto-mim">
+        <h1 class="titulo-sobre-mim profunda">Tiefenmassage</h1>
+        <p class="descricao-massagem profunda">Die Tiefenmassage ist ideal, um Muskelverspannungen zu lösen.</p>
+        <p class="precos">
+            30 Minuten - 45€<br>
+            1 Stunde - 60€<br>
+            1 Stunde 30 Minuten - 100€
+        </p>
+        <section class="botao-agenda">
+            <a href="https://wa.me/+491637977580" class="botao-branco">
+                <span class="agenda-text">Massage buchen</span>
+            </a>
+        </section>
+    </section>
     
-            // Atualizar conteúdo para o layout mobile
-            document.querySelectorAll('.service .titulo-sobre-mim').forEach((element) => {
-                const serviceClass = element.classList[1]; // Para identificar a classe do serviço (relax, sueco, etc)
-                if (translations[lang][serviceClass + 'Title']) {
-                    element.innerHTML = translations[lang][serviceClass + 'Title'];
-                }
-            });
+    <!-- Massagem Podal -->
+    <section class="fundo-branco">
+        <img src="images/podal.png" alt="Foto de massagem podal" class="foto-mim">
+        <h1 class="titulo-sobre-mim podal">Fußmassage</h1>
+        <p class="descricao-massagem podal">Eine Fußmassage, die Entspannung und Wohlbefinden fördert.</p>
+        <p class="precos verde">
+            30 Minuten - 45€
+        </p>
+        <section class="botao-agenda">
+            <a href="https://wa.me/+491637977580" class="botao-verde">
+                <span class="agenda-text">Massage buchen</span>
+            </a>
+        </section>
+    </section>
     
-            document.querySelectorAll('.service .descricao-massagem').forEach((element) => {
-                const serviceClass = element.classList[1];
-                if (translations[lang][serviceClass + 'Desc']) {
-                    element.innerHTML = translations[lang][serviceClass + 'Desc'];
-                }
-            });
-    
-            document.querySelectorAll('.service .precos').forEach((element) => {
-                const serviceClass = element.classList[1];
-                if (translations[lang][serviceClass + 'Price']) {
-                    element.innerHTML = translations[lang][serviceClass + 'Price'];
-                }
-            });
-    
-            // Atualizar conteúdo para o layout desktop
-            document.querySelectorAll('.serviceDesktop .titulo-sobre-mim').forEach((element) => {
-                const serviceClass = element.classList[1];
-                if (translations[lang][serviceClass + 'Title']) {
-                    element.innerHTML = translations[lang][serviceClass + 'Title'];
-                }
-            });
-    
-            document.querySelectorAll('.serviceDesktop .descricao-massagem').forEach((element) => {
-                const serviceClass = element.classList[1];
-                if (translations[lang][serviceClass + 'Desc']) {
-                    element.innerHTML = translations[lang][serviceClass + 'Desc'];
-                }
-            });
-    
-            document.querySelectorAll('.serviceDesktop .precos').forEach((element) => {
-                const serviceClass = element.classList[1];
-                if (translations[lang][serviceClass + 'Price']) {
-                    element.innerHTML = translations[lang][serviceClass + 'Price'];
-                }
-            });
-    
-            // Traduzir os botões de idioma
-            document.querySelectorAll(".languages button").forEach(button => {
-                button.innerText = lang === "de" ? "Deutsch" : lang === "pt" ? "Português" : "English";
-            });
-    
-            // Traduzir os botões com classes específicas
-            document.querySelectorAll(".botao-verde").forEach(button => {
-                button.innerText = lang === "de" ? "Termin buchen" : lang === "pt" ? "Faça seu agendamento" : "  Book Now  ";
-            });
-    
-            document.querySelectorAll(".botao-branco").forEach(button => {
-                button.innerText = lang === "de" ? "Termin buchen" : lang === "pt" ? "Faça seu agendamento" : "Book now";
-            });
-    
-            // Traduzir o texto da classe 'atencao'
-            document.querySelectorAll(".atencao").forEach(element => {
-                element.innerText = translations[lang].atencaoText;
-            });
-        }
-    
-        // Adicionar eventos aos botões de idioma
-        document.querySelectorAll(".languages button").forEach(button => {
-            button.addEventListener("click", () => {
-                const language = button.dataset.lang; // Recupera o idioma do botão (de, pt, en)
-                changeLanguage(language);
-            });
-        });
-    </script>
-    
+    <!-- Massagem Pindas Chinesa -->
+    <section class="fundo-verde">
+        <img src="images/pindas.png" alt="Foto de massagem pindas chinesa" class="foto-mim">
+        <h1 class="titulo-sobre-mim profunda">Kräuterstempelmassage</h1>
+        <p class="descricao-massagem pindas">Massage mit aromatischen Pindas für tiefe Entspannung und Energieaufbau.</p>
+        <p class="precos">
+            1 Stunde - 80€<br>
+            1 Stunde 30 Minuten - 120€<br>
+            2 Stunden - 150€
+        </p>
+        <section class="botao-agenda">
+            <a href="https://wa.me/+491637977580" class="botao-branco">
+                <span class="agenda-text">Massage buchen</span>
+            </a>
+        </section>
+    </section>
+</div>
+
+<p class="atencao">
+    Achtung: Der Service ist ausschließlich auf das Wohlbefinden ausgerichtet. Keine therapeutischen Massagen, Behandlungen oder Verfahren zur Schmerzlinderung.
+</p>
+
+<section class="botao-whatsa">
+    <a href="https://wa.me/+491637977580" class="btn-alemao">
+        <img src="images/btn-german-white.png" alt="Agenda sua massagem">
+    </a>           
+</section>
+
+<footer class="footer-links-azul">
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="https://www.instagram.com/fahed.masseur/" target="_blank">Instagram</a></li>
+            <li><a href="service.html">Dienstleistung</a></li>
+            <li><a href="howwork.html">Wie es funktioniert</a></li>
+            <li><a href="sobremim.html">Über mich</a></li>
+            <li><a href="pergunta.html">FAQ</a></li>
+            <li><a href="https://wa.me/+491637977580" target="_blank">WhatsApp</a></li>
+        </ul>
+</footer>
+
 </body>
 </html>

@@ -5,216 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como funciona</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        // Função para alterar o idioma
-        function changeLanguage(language) {
-            const elements = {
-                title: {
-                    'de': "Wie funktioniert Ihre Massage-Erfahrung?",
-                    'pt': "Como funciona a sua experiência de massagem?",
-                    'en': "How does your massage experience work?"
-                },
-                scheduling: {
-                    'de': "1. Terminvereinbarung:",
-                    'pt': "1. Agendamento:",
-                    'en': "1. Scheduling:"
-                },
-                preparation: {
-                    'de': "2. Vorbereitung des Raumes:",
-                    'pt': "2. Preparando o ambiente:",
-                    'en': "2. Preparing the environment:"
-                },
-                arrival: {
-                    'de': "3. Ankunft des Masseurs:",
-                    'pt': "3. Chegada do Massagista:",
-                    'en': "3. Arrival of the Massager:"
-                },
-                initialConversation: {
-                    'de': "4. Erstes Gespräch:",
-                    'pt': "4. Conversa Inicial:",
-                    'en': "4. Initial Conversation:"
-                },
-                massage: {
-                    'de': "5. Massage:",
-                    'pt': "5. Massagem:",
-                    'en': "5. Massage:"
-                },
-                closing: {
-                    'de': "6. Abschluss und Empfehlungen:",
-                    'pt': "6. Encerramento e Recomendações:",
-                    'en': "6. Closing and Recommendations:"
-                },
-                payment: {
-                    'de': "7. Zahlung und Abschied:",
-                    'pt': "7. Pagamento e Despedida:",
-                    'en': "7. Payment and Farewell:"
-                },
-                agendaText: {
-                    'de': "Vereinbaren Sie Ihre Massage",
-                    'pt': "Agenda sua massagem",
-                    'en': "Schedule your massage"
-                },
-                footerServices: {
-                    'de': "Dienstleistungen",
-                    'pt': "Serviços",
-                    'en': "Services"
-                },
-                footerAboutMe: {
-                    'de': "Über mich",
-                    'pt': "Sobre mim",
-                    'en': "About me"
-                },
-                footerHowWork: {
-                    'de': "Wie funktioniert es?",
-                    'pt': "Como funciona?",
-                    'en': "How it works?"
-                },
-                footerFAQ: {
-                    'de': "Häufig gestellte Fragen",
-                    'pt': "Perguntas Frequentes",
-                    'en': "Frequently Asked Questions"
-                }
-            };
-
-            // Armazena a seleção do idioma no localStorage
-            localStorage.setItem('language', language);
-
-            // Altera o conteúdo da página com base no idioma selecionado
-            document.getElementById("titulo").innerText = elements.title[language];
-            document.getElementById("scheduling").innerText = elements.scheduling[language];
-            document.getElementById("preparation").innerText = elements.preparation[language];
-            document.getElementById("arrival").innerText = elements.arrival[language];
-            document.getElementById("initialConversation").innerText = elements.initialConversation[language];
-            document.getElementById("massage").innerText = elements.massage[language];
-            document.getElementById("closing").innerText = elements.closing[language];
-            document.getElementById("payment").innerText = elements.payment[language];
-            document.querySelector(".agenda-text").innerText = elements.agendaText[language];
-
-            // Alterando o conteúdo do rodapé
-            document.querySelector("a[href='service.html'] span").innerText = elements.footerServices[language];
-            document.querySelector("a[href='sobremim.html'] span").innerText = elements.footerAboutMe[language];
-            document.querySelector("a[href='howwork.html'] span").innerText = elements.footerHowWork[language];
-            document.querySelector("a[href='pergunta.html'] span").innerText = elements.footerFAQ[language];
-        }
-
-        // Ao carregar a página, verifica o idioma salvo e aplica
-        document.addEventListener("DOMContentLoaded", function() {
-            const savedLanguage = localStorage.getItem('language') || 'de'; // Padrão para Alemão se não houver idioma salvo
-            changeLanguage(savedLanguage);
-        });
-    </script>
+    
 </head>
 <body class="body1">
     <!-- Barra Superior -->
-    <header class="header">
+    <nav class="nav">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="logo-img"> <!-- Logo à esquerda -->
-            </a>
-            <img src="images/logotxt.png" alt="Logo2" class="logo-img1"> <!-- Logo centralizada -->
-        </div>
-        <div class="menu">
-            <span class="languages">
-                <button onclick="changeLanguage('de')">Deutsch</button>
-                <button onclick="changeLanguage('pt')">Português</button>
-                <button onclick="changeLanguage('en')">English</button>
-            </span>
-            <div class="menu-dots">
-                <img src="images/menu.png" alt="menulinhas" class="menu-img">
-            </div>
-        </div>
-    </header>
+            <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
+            <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
+       </div>
+       <div class="menu">
+           <span class="languages">
+               <button aria-label="Alterar para Alemão">
+                   <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
+               </button>
+               <button aria-label="Alterar para Português">
+                   <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
+               </button>
+               <button aria-label="Alterar para Inglês">
+                   <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
+               </button>
+           </span>
+       </div>
+       
+   </nav>
     <div class="links">
-        <a href="index.html">Início</a> / 
-        <a href="#sobre-mim">Como funciona</a>
+<a href="index.html">Startseite</a> /  
+<a href="#sobre-mim">Wie funktioniert es</a>
+```
     </div>
 
     <!-- Como funciona -->
     <section class="sobre-mim how">
         <!-- Título -->
-        <h1 id="titulo" class="titulo-sobre-mim how pc">Como funciona a sua experiência de massagem?</h1>
+        <h1 id="titulo" class="titulo-sobre-mim how pc">Wie funktioniert Ihre Massage-Erfahrung?</h1>
 
-        <!-- Texto -->
-        <p class="texto-how pc">
-            <strong id="scheduling">1. Agendamento:</strong><br>O agendamento é feito exclusivamente por WhatsApp, pois sou surdo e me comunico por mensagem. Basta me enviar uma mensagem para marcar sua sessão.<br><br> 
+<!-- Texto -->
+<p class="texto-how pc">
+    <strong id="scheduling">1. Terminvereinbarung:</strong><br>Die Terminvereinbarung erfolgt ausschließlich über WhatsApp, da ich gehörlos bin und per Nachricht kommuniziere. Schreiben Sie mir einfach eine Nachricht, um Ihre Sitzung zu buchen.<br><br> 
 
-            <strong id="preparation">2. Preparando o ambiente:</strong><br>Recomendo que o ambiente esteja tranquilo e ventilado antes da minha chegada para garantir uma experiência ainda mais relaxante.<br><br> 
-            
-            <strong id="arrival">3. Chegada do Massagista:</strong><br>Chegarei no horário combinado, trazendo tudo o que é necessário para a massagem: mesa profissional, óleos e música suave. Você não precisa se preocupar com nada!<br><br> 
-            
-            <strong id="initialConversation">4. Conversa Inicial:</strong><br>Antes de começar, faremos uma breve conversa para saber o que você espera da massagem e qual o tipo de toque que prefere, sempre focando no seu bem-estar.<br><br> 
-            
-            <strong id="massage">5. Massagem:</strong><br>Utilizo técnicas de massagem que promovem um profundo relaxamento, ajudando a recuperar suas energias e proporcionando uma sensação de leveza e tranquilidade. O foco é renovar o seu corpo e mente, oferecendo uma experiência única de bem-estar.<br><br> 
-            
-            <strong id="closing">6. Encerramento e Recomendações:</strong><br>Após a massagem, irei auxiliá-lo a se vestir e fornecer algumas orientações simples para prolongar os benefícios da sessão.<br><br> 
-            
-            <strong id="payment">7. Pagamento e Despedida:</strong><br>O pagamento pode ser feito em dinheiro, cartão ou via Google Pay. Após a sessão, nos despedimos e você estará pronto para seguir seu dia renovado!<br><br>
-            
-        </p>
+    <strong id="preparation">2. Vorbereitung der Umgebung:</strong><br>Ich empfehle, den Raum vor meiner Ankunft ruhig und gut belüftet zu halten, um eine noch entspannendere Erfahrung zu gewährleisten.<br><br> 
+    
+    <strong id="arrival">3. Ankunft des Masseurs:</strong><br>Ich komme zur vereinbarten Zeit an und bringe alles mit, was für die Massage benötigt wird: eine professionelle Liege, Öle und sanfte Musik. Sie müssen sich um nichts kümmern!<br><br> 
+    
+    <strong id="initialConversation">4. Erstes Gespräch:</strong><br>Vor Beginn führen wir ein kurzes Gespräch, um zu erfahren, was Sie von der Massage erwarten und welche Art der Berührung Sie bevorzugen, wobei Ihr Wohlbefinden stets im Mittelpunkt steht.<br><br> 
+    
+    <strong id="massage">5. Massage:</strong><br>Ich verwende Massagetechniken, die eine tiefe Entspannung fördern, Ihre Energie wiederherstellen und ein Gefühl der Leichtigkeit und Gelassenheit vermitteln. Ziel ist es, Körper und Geist zu erneuern und Ihnen ein einzigartiges Wohlfühlerlebnis zu bieten.<br><br> 
+    
+    <strong id="closing">6. Abschluss und Empfehlungen:</strong><br>Nach der Massage helfe ich Ihnen beim Ankleiden und gebe Ihnen einige einfache Tipps, um die positiven Effekte der Sitzung zu verlängern.<br><br> 
+    
+    <strong id="payment">7. Zahlung und Verabschiedung:</strong><br>Die Zahlung kann in bar, per Karte oder über Google Pay erfolgen. Nach der Sitzung verabschieden wir uns, und Sie können erfrischt und erneuert in Ihren Tag starten!<br><br>
+    
+</p>
+
 
         <!-- Botão WhatsApp -->
-        <section class="botao-whats how pc">
-            <a href="https://wa.me/+491637977580" class="cta-whatsapp">
-                <img src="images/whatsapp.png" alt="WhatsApp">
-                <span class="number">+49 163 7977580</span>
-                <span class="agenda-text">Agenda sua massagem</span>
-            </a>
-        </section>
+    </section>
+    <section class="botao-whatsa-how">
+        <a href="https://wa.me/+491637977580" class="btn-alemao">
+            <img src="images/btn-german-white.png" alt="Agenda sua massagem">
+        </a>           
     </section>
 
-    <footer class="fundo-branco">
-        <section class="media-principal2">
-            <section class="buttons-sectiona">
-                <div class="button-box">
-                    <div class="button">
-                        <a href="service.html">
-                            <img src="images/service.png" alt="Serviços">
-                            <span>Serviços</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="sobremim.html">
-                            <img src="images/sobre mim.png" alt="Sobre Mim">
-                            <span>Sobre mim</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="button-box">
-                    <div class="button">
-                        <a href="howwork.html">
-                            <img src="images/howwork.png" alt="Como Funciona">
-                            <span>Como Funciona?</span>
-                        </a>
-                    </div>
-                    <div class="button">
-                        <a href="pergunta.html">
-                            <img src="images/pergunta.png" alt="Perguntas Frequentes">
-                            <span>Perguntas Frequentes</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </section>
-    </footer>
-    <footer class="footer-impressum">
-        <div class="contact-info">
-            <h1>Impressum</h1>
-            <p>muhieddine esberard<br />
-            Fahed Masseur<br />
-            aldebaranstraße 16<br />
-            12529 Schönefeld</p>
-            <p>Telefon: +4917640150495<br />
-            E-Mail: hido.merreden@hotmail.com</p>
-            <p>USt-IdNr: 04921703975</p>
-        </div>
-    
-        <div class="eu-dispute">
-            <h2>EU-Streitschlichtung</h2>
-            <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
-            <h2>Verbraucherstreitbeilegung</h2>
-            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren teilzunehmen.</p>
-        </div>
-    </footer>
-    
+    <footer class="footer-links-azul">
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="https://www.instagram.com/fahed.masseur/" target="_blank">Instagram</a></li>
+            <li><a href="service.html">Dienstleistung</a></li>
+            <li><a href="howwork.html">Wie es funktioniert</a></li>
+            <li><a href="sobremim.html">Über mich</a></li>
+            <li><a href="pergunta.html">FAQ</a></li>
+            <li><a href="https://wa.me/+491637977580" target="_blank">WhatsApp</a></li>
+        </ul>
+</footer>
 </body>
 </html>

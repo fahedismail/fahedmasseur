@@ -161,16 +161,24 @@ nav .menu-dots {
     color: var(--cor-texto-verde);
 }
 
-
+.media-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
 
 .text-section {
-/*background: linear-gradient(to bottom, #325738 0%, #86A186 100%);*/
+display: flex;
+flex-direction: column;
 background: var(--cor-fundo-bege);
     padding: 40px 0;
     text-align: center;
     height: 402px;
     margin: 0 auto;
-
+    align-items: center;
+    margin: 0 auto;
+    
 }
 
 .text-section h1 {
@@ -295,6 +303,9 @@ max-width: 350px;
     margin: auto;
 }
 
+.footer-links ul{
+    margin: 0 auto;
+}
 /*=============================================================
 
 ----------PAGINA SOBRE MIM / HOW WORK / PERGUNTA----------------
@@ -307,10 +318,18 @@ body.body1 {
 background: var(--cor-fundo-verde);
 }
 
+
+
+
+
+
+
+
+
 /* Links */
 .links {
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     font-size: 20px;
     color: var(--cor-texto-bege);
     margin-top: 20px;
@@ -329,7 +348,7 @@ background: var(--cor-fundo-verde);
 /* Título */
 .titulo-sobre-mim {
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     font-weight: 800;
     font-size: 40px;
     color: var(--cor-texto-bege);
@@ -342,7 +361,7 @@ background: var(--cor-fundo-verde);
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
-    color: var(--cor-texto-bege);
+    color: var(--cor-texto-verde);
 } 
 
 /* Foto */
@@ -360,7 +379,7 @@ background: var(--cor-fundo-verde);
 
 /* Texto */
 .texto-sobre-mim {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     font-size: 20px;
     color: var(--cor-texto-bege);
     text-align: center;
@@ -373,12 +392,12 @@ background: var(--cor-fundo-verde);
     font-size: 1.5em; /* Ajuste o valor conforme necessário */
     font-weight: bold; /* Isso já é padrão para <strong>, mas pode ser reforçado */
     color: var(--cor-texto-bege);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     
 }
 
 .texto-how{
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     text-align: left;
     color: var(--cor-texto-bege);
     max-width: 850px;
@@ -429,7 +448,7 @@ margin: 0;
 
 .fundo-verde{
     padding-top: 20px;
-    background-color: var(--cor-texto-verde);
+    background-color: var(--cor-fundo-verde);
     padding-bottom: 30px;
     
 }
@@ -437,7 +456,7 @@ margin: 0;
 .precos{
     font-size: 20px;
     color: var(--cor-texto-bege);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     text-align: center;
     margin: 10px auto;
 }
@@ -515,7 +534,21 @@ margin: 0;
     display: none;
 }
 
+.botao-whatsa-how{
+display: flex;
+justify-content: center;
+margin: 30px auto;
+width: 80%;
 
+
+
+
+}
+
+.botao-whatsa-how a img{
+margin: 0 auto;  
+max-width: 80%;
+}
 /*=====================================================================
 -                           footer
 =====================================================================*/
@@ -530,11 +563,83 @@ footer{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 10 auto;
+    margin: auto;
     max-width: 500px;
     gap: 20px;
-    padding: 10px;
+    
 }
+
+
+.footer-links-azul{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    background: var(--cor-fundo-verde);
+    width: 100%;
+    padding: 10px 0 ;
+}
+
+.footer-links-azul ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: auto;
+    max-width: 60%;
+    gap: 10px;
+
+    
+}
+
+
+/*======================================================================================
+- Impressum
+======================================================================================*/
+body.impressum-container {
+    background: var(--cor-fundo-verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--cor-fundo-bege);
+    font-family: sans-serif;
+}
+
+.impressum-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.impressum-title {
+    font-family: var(--fonte-titulo-grosso);
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.impressum-subtitle {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.impressum-info,
+.impressum-source {
+    font-size: 16px;
+}
+
+.impressum-source a {
+    color: var(--cor-fundo-bege);
+    text-decoration: none;
+}
+
+.impressum-source a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 
@@ -564,6 +669,11 @@ footer{
     ------------------CABECALHO--------------------------------
     =============================================================*/
 
+    nav .logo-img, nav .logo-img1 {
+        max-width: 100%;
+        height: auto; /* Isso preserva a proporção da imagem */
+    }
+
 
     .nav { 
         max-width: 1844px;
@@ -577,13 +687,16 @@ footer{
         .logo-img1 {
             content: url('images/logotxtdeskt.png');
         }
-        nav .logo-img1{
-            width: 521px;
-            height: 88px;
+        nav img .logo-img1 {
+            max-width: 894px;  /* Define o tamanho máximo conforme o tamanho original */
+            width: 100%;  /* Permite que a imagem cresça responsivamente */
+            height: auto;  /* Mantém a proporção original */
         }
-        nav .logo-img{
-            width: 187px;
-            height: 113px;
+
+        nav .logo-img1 {
+            max-width: 894px; /* Aumenta o limite da logo1 */
+            width: 100%;
+            height: auto;
         }
 
         nav .languages button {
@@ -596,7 +709,26 @@ footer{
         nav .languages {
             right: 100px; /* Alinha os botões à direita */
         }
+
+        .logo{
+            padding: 10px 0;
+        }
         
+.links-azul{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.links-azul a{
+    color: var(--cor-texto-verde);
+    text-decoration: none;
+    margin: 10px auto;
+    text-align: center;
+
+    
+}
+
+
 /*==========================================================
 --------------------PRINCIPAL-------------------------------
 ===========================================================*/
@@ -607,12 +739,11 @@ main{
     width: 100%;
 }
 
-
-
 .media-principal{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
@@ -646,13 +777,13 @@ main{
 
     .text-section h1 {
         font-size: 58px;
-        width: 800px;
+        max-width: 800px;
     }
 
 
     .text-section p {
         font-size: 36px;
-        width: 590px;
+        max-width: 590px;
         line-height: 1.5;
     }
 
@@ -669,6 +800,7 @@ main{
 
     .button-container{
         display: flex;
+        flex-direction: row;
         gap: 20px;
         align-items: center;
         margin: 0 auto;
@@ -714,14 +846,41 @@ footer{
     max-width: 1844px;
 }
 
+.footer-links-azul{
+    background: var(--cor-fundo-verde);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    margin: 20px auto;
+    max-width: 1473px;
+
+
+}
+
 .footer-links ul{
     background: var(--cor-fundo-bege);
     display: flex;
     list-style: none;
     gap: 50px;
     margin: 20px 0;
+    max-width: 1600px;
 }
 
+.footer-links-azul ul{
+    background: var(--cor-fundo-verde);
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 20px 0;
+    max-width: 1600px;
+}
+
+.footer-links-azul ul li{
+color: var(--cor-fundo-bege);
+}
 
 /*=============================================================
 ----------------------SERVICE----------------------------------
@@ -748,7 +907,7 @@ footer{
     display: block;
     margin: 0 auto;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fonte-titulo-grosso);
     max-width: 1473px;
     min-width: 1473px;
     width: 100%;
@@ -882,7 +1041,7 @@ section {
 .atencao{
     font-size: 36px;
     width: 1900px;
-    min-width: 1500px;
+    min-width: 1300px;
 }
 
 
@@ -907,6 +1066,16 @@ section {
     margin: 0 auto; 
    
 }
+
+.botao-whatsa-how{
+    display: flex;
+        justify-content: center;
+    margin: 30px auto;
+    }
+    
+    .botao-whatsa-how a{
+    margin: 0 auto;    
+    }
 
 footer {
     display: block;
@@ -965,7 +1134,7 @@ footer .buttons-sectiona {
 .texto-sobre-mim.pc{
     grid-column: 2 / 3;
     grid-row: 2/ 4; 
-    font-size: 36px; 
+    font-size: 32px; 
     max-width: 1160px;
     width: auto;
 }
