@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Idioma padrão (DE) selecionado. Restaurando conteúdo original.');
         } else {
             // Carrega as traduções para outros idiomas
-            fetch(`../translations/${lang}.json`)
+            fetch(`/translations/${lang}.json`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`Erro ao carregar o arquivo de tradução: ${response.statusText}`);
