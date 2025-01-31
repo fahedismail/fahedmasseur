@@ -11,7 +11,15 @@
 }
 
 
+.precos {
+    white-space: normal; /* Garante que as quebras de linha sejam respeitadas */
+}
 
+.precos br {
+    display: block; /* Garante que <br> funcione corretamente */
+    content: ""; /* Adiciona um espaço após a quebra de linha */
+    margin-bottom: 10px; /* Adiciona um espaçamento entre as linhas */
+}
 
 /* ================================
     1. ESTILO GLOBAL (reset e fontes)
@@ -1115,7 +1123,7 @@ footer .buttons-sectiona {
     grid-template-rows: auto; /* Altura automática */
     gap: 20px; /* Espaçamento entre os elementos */
     padding: 20px;
-    max-width: 2142px;
+    max-width: 1420px;
     margin: 0 auto;
 }
 

@@ -1,93 +1,86 @@
 {
     "INDEX": {
-      "title": "Mobile Massage in the Comfort of Your Home",
-      "text": "Discover the power of relaxation in the comfort of your home in Berlin.",
-      "button-text": "Schedule Your Massage",
-      "button-links": {
-        "service": "Services",
-        "how_it_works": "How it Works",
-        "faq": "Frequently Asked Questions",
-        "about": "About Me"
-      },
-      "footer-links": {
-        "impressum": "Impressum",
-        "instagram": "Instagram",
-        "whatsapp": "WhatsApp"
-      }
+        "title": "Mobile Massage in the Comfort of Your Home",
+        "text": "Discover the power of relaxation in the comfort of your home in Berlin.",
+        "button-text": "Book Your Massage",
+        "whatsapp_button": "images/btn-whatsapp-en.png",
+        "buttons": {
+            "service": "images/btn-service-en.png",
+            "howitworks": "images/btn-howitworks-en.png",
+            "faq": "images/btn-faq-en.png",
+            "about": "images/btn-about-en.png"
+        },
+        "footer-links": {
+            "impressum": "Impressum",
+            "instagram": "Instagram",
+            "service": "Services",
+            "how-it-works": "How It Works",
+            "about-me": "About Me",
+            "faq": "FAQ",
+            "whatsapp": "WhatsApp"
+        }
     },
     "HOWWORK": {
-      "title": "How Does Your Massage Experience Work?",
-      "text": {
-        "scheduling": "1. Appointment Scheduling: Appointments are made exclusively via WhatsApp, as I am deaf and communicate through messages. Simply send me a message to book your session.",
-        "preparation": "2. Preparing the Environment: I recommend keeping the room quiet and well-ventilated before my arrival to ensure a more relaxing experience.",
-        "arrival": "3. Masseur's Arrival: I will arrive at the scheduled time with everything needed for the massage: a professional massage table, oils, and soft music. You don't need to worry about anything!",
-        "initialConversation": "4. Initial Conversation: Before we begin, we will have a brief conversation to understand what you expect from the massage and what type of touch you prefer, with your well-being always in focus.",
-        "massage": "5. The Massage: I use techniques that promote deep relaxation, restore your energy, and create a sense of ease and calm. The goal is to renew your body and mind and provide a unique feeling of well-being.",
-        "closing": "6. Closing and Recommendations: After the massage, I will assist you with dressing and provide simple tips to prolong the positive effects of the session.",
-        "payment": "7. Payment and Goodbye: Payment can be made in cash, by card, or through Google Pay. After the session, we say goodbye, and you can start your day feeling refreshed and renewed!"
-      }
-    },
-    "FAQ": {
-      "title": "Frequently Asked Questions",
-      "text": {
-        "question1": "1. What do I need to do to receive a massage at my home? Choose a quiet and comfortable space with enough room for the massage table. Schedule an appointment at a time when you can relax without rushing. Don't worry about materials – I will bring everything. Wear comfortable clothes or underwear, or if you prefer, you can remain undressed.",
-        "question2": "2. How can I schedule an appointment? Appointments are made exclusively via WhatsApp. Just send me a message to agree on the time and location.",
-        "question3": "3. I have pain or health problems. Can I get a massage? My massages are for relaxation and well-being and are not intended for medical treatment. They are suitable for healthy individuals.",
-        "question4": "4. Can I pay by card? Yes, you can pay in cash, by card (VISA, Mastercard, etc.), or via Google Pay.",
-        "question5": "5. What are your hours of operation? I am available from Monday to Friday with flexible hours. Contact me via WhatsApp to schedule an appointment.",
-        "communication": "Communication: Before the massage, share your preferences and needs with me, such as any specific areas that need extra attention or anything that should be avoided."
-      }
+        "title": "How Does Your Massage Experience Work?",
+        "text": {
+            "scheduling": "1. Scheduling:",
+            "scheduling.description": "Appointments are made exclusively through WhatsApp, as I am deaf and communicate via messages. Simply send me a message to book your session.",
+            "preparation": "2. Preparing the Environment:",
+            "preparation.description": "I recommend keeping the room calm and well-ventilated before my arrival to ensure a more relaxing experience.",
+            "arrival": "3. Arrival of the Therapist:",
+            "arrival.description": "I will arrive at the scheduled time, bringing everything necessary for the massage: a professional massage table, oils, and soothing music. You don't have to worry about anything!",
+            "initialConversation": "4. Initial Conversation:",
+            "initialConversation.description": "Before we begin, we will have a brief conversation to understand what you expect from the massage and what kind of touch you prefer, always focusing on your well-being.",
+            "massage": "5. Massage:",
+            "massage.description": "I use techniques that promote deep relaxation, restore your energy, and create a sense of lightness and calm. The goal is to renew your body and mind, offering a unique sense of well-being.",
+            "closing": "6. Closing and Recommendations:",
+            "closing.description": "After the massage, I will help you dress and give you a few simple tips to extend the positive effects of the session.",
+            "payment": "7. Payment and Farewell:",
+            "payment.description": "Payment can be made in cash, by card, or via Google Pay. After the session, we say goodbye, and you can start your day refreshed and rejuvenated!"
+        }
     },
     "SERVICE": {
-      "title": "Services",
-      "common": {
-        "button-text": "Book Massage",
-        "prices": {
-          "30min": "30 Minutes - €45",
-          "1hour": "1 Hour - €60",
-          "1hour30min": "1 Hour 30 Minutes - €100",
-          "1hour80": "1 Hour - €80",
-          "1hour30min120": "1 Hour 30 Minutes - €120",
-          "2hours": "2 Hours - €150"
-        }
-      },
-      "sections": [
-        {
-          "title": "Relaxation Massage",
-          "description": ""
+        "title": "Services",
+        "common": {
+            "button-text": "Book a Massage",
+            "prices": {
+                "30min": "30 Minutes - 45€",
+                "1hour": "1 Hour - 60€",
+                "1hour30min": "1 Hour and 30 Minutes - 100€",
+                "1hour80": "1 Hour - 80€",
+                "1hour30min120": "1 Hour and 30 Minutes - 120€",
+                "2hours": "2 Hours - 150€"
+            }
         },
-        {
-          "title": "Swedish Massage",
-          "description": ""
-        },
-        {
-          "title": "Deep Tissue Massage",
-          "description": ""
-        },
-        {
-          "title": "Foot Massage",
-          "description": ""
-        },
-        {
-          "title": "Herbal Stamp Massage",
-          "description": ""
-        }
-      ]
+        "sections": [
+            {
+                "title": "Relaxation Massage",
+                "description": "The relaxation massage helps to relieve stress and tension."
+            },
+            {
+                "title": "Swedish Massage",
+                "description": "The Swedish massage promotes blood circulation and deep relaxation."
+            },
+            {
+                "title": "Deep Tissue Massage",
+                "description": "The deep tissue massage is ideal for relieving muscle tension."
+            },
+            {
+                "title": "Foot Massage",
+                "description": "A foot massage that promotes relaxation and well-being."
+            },
+            {
+                "title": "Chinese Herbal Massage",
+                "description": "Massage with aromatic herbal pouches for deep relaxation and energy renewal."
+            }
+        ]
     },
     "ABOUTME": {
-      "title": "About Me",
-      "text": "My name is Fahed, and I am a Portuguese-Brazilian masseur with Lebanese roots. Since 2021, I have been working as a professional masseur and completed my training in Portugal. I am passionate about using specialized and carefully applied techniques to bring relaxation and well-being.\n\nI am orally educated deaf, which makes me particularly attentive to my clients' needs. I communicate clearly, understand some English, and am currently learning German to better serve you.\n\nMy priority is to offer personalized service that makes each session unique, relaxing, and tailored to your expectations. Treat yourself to an unforgettable wellness experience. Book your massage and recharge today!",
-      "image-alt": "Photo of Fahed",
-      "whatsapp-button-text": "Schedule Your Massage",
-      "footer-links": {
-        "impressum": "Impressum",
-        "instagram": "Instagram",
-        "service": "Services",
-        "how-it-works": "How it Works",
-        "about-me": "About Me",
-        "faq": "FAQ",
-        "whatsapp": "WhatsApp"
-      }
+        "title": "About Me",
+        "text": "My name is Fahed, I am a Luso-Brazilian massage therapist of Lebanese descent. I have been a professional massage therapist since 2021 and completed my training in Portugal. I am passionate about massage and always strive to promote relaxation and well-being. I am an oralized deaf person, which makes me especially attentive to my clients' needs. I communicate clearly, understand some English, and am learning German to serve you even better. My priority is to offer a personalized service, making each session unique, relaxing, and tailored to your expectations. Treat yourself to an unforgettable well-being experience. Book your massage and recharge your energy today!",
+        "whatsapp-button-text": "Book Your Massage"
+    },
+    "ATENCAO": {
+        "text": "Attention: The service is solely focused on well-being. I do not perform therapeutic massages, treatments, or procedures for pain relief."
     }
-  }
-  
+}

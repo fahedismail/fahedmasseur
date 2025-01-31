@@ -3,266 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <title>Service</title>
+    <title data-translate="SERVICE.title" data-default="Dienstleistungen">Dienstleistungen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Cabeçalho -->
-     <div class="service">
-
-         <nav class="nav">
-             <div class="logo">
-                 <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
-                 <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
+    <div class="service">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
+                <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
             </div>
-            <div class="menu">
-                <span class="languages">
-                    <button aria-label="Alterar para Alemão">
-                        <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
-                    </button>
-                    <button aria-label="Alterar para Português">
-                        <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
-                    </button>
-                    <button aria-label="Alterar para Inglês">
-                        <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
-                    </button>
-                </span>
-            </div>
-            
+<!-- 
+    <div class="menu">
+        <span class="languages">
+            <button class="language-button" data-lang="DE" aria-label="Alterar para Alemão">
+                <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
+            </button>
+            <button class="language-button" data-lang="PT" aria-label="Alterar para Português">
+                <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
+            </button>
+            <button class="language-button" data-lang="EN" aria-label="Alterar para Inglês">
+                <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
+            </button>
+        </span>
+    </div>
+    -->
         </nav>
         <main>
-            
             <!-- Seção Sobre Mim - Mobile -->
             <section class="sobre-mim a">
                 <!-- Links -->
                 <div class="links">
-                    <a href="index.html">Startseite</a> / 
-                    <a href="#servicos">Dienstleistungen</a>
+                    <a href="index.html" data-translate="INDEX.footer-links.home" data-default="Startseite">Startseite</a> / 
+                    <a href="#servicos" data-translate="SERVICE.title" data-default="Dienstleistungen">Dienstleistungen</a>
                 </div>
                 <!-- Massagem Relaxamento -->
                 <section class="fundo-verde">
-                    <h1 class="titulo-sobre-mim relax">Entspannungsmassage</h1>
+                    <h1 class="titulo-sobre-mim relax" data-translate="SERVICE.sections[0].title" data-default="Entspannungsmassage">Entspannungsmassage</h1>
                     <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
-                    <p class="descricao-massagem relax"></p>
-                    <p class="precos relax">
-                        30 Minuten - 45€<br>
-                        1 Stunde - 60€<br>
-                        1 Stunde 30 Minuten - 100€
+                    <p class="descricao-massagem relax" data-translate="SERVICE.sections[0].description" data-default="Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.">Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.</p>
+                    <p class="precos relax" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€"> 30 Minuten - 45€<br>
+                        <span data-translate="SERVICE.common.prices.1hour" data-default="1 Stunde - 60€">1 Stunde - 60€</span><br>
+                        <span data-translate="SERVICE.common.prices.1hour30min" data-default="1 Stunde 30 Minuten - 100€">1 Stunde 30 Minuten - 100€</span>
                     </p>
                     <section class="botao-agenda relax">
                         <a href="https://wa.me/+491637977580" class="botao-branco">
-                            <span class="agenda-text">Massage buchen</span>
+                            <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
                         </a>
                     </section>
                 </section>
                 
                 <!-- Massagem Sueco -->
                 <section class="fundo-branco">
-                    <h1 class="titulo-sobre-mim sueco">Schwedische Massage</h1>
+                    <h1 class="titulo-sobre-mim sueco" data-translate="SERVICE.sections[1].title" data-default="Schwedische Massage">Schwedische Massage</h1>
                     <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
-                    <p class="descricao-massagem-verde sueco"></p>
-                    <p class="precos verde sueco">
+                    <p class="descricao-massagem-verde sueco" data-translate="SERVICE.sections[1].description" data-default="Die schwedische Massage fördert die Durchblutung und tiefe Entspannung.">Die schwedische Massage fördert die Durchblutung und tiefe Entspannung.</p>
+                    <p class="precos verde sueco" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
                         30 Minuten - 45€<br>
-                        1 Stunde - 60€<br>
-                        1 Stunde 30 Minuten - 100€
+                        <span data-translate="SERVICE.common.prices.1hour" data-default="1 Stunde - 60€">1 Stunde - 60€</span><br>
+                        <span data-translate="SERVICE.common.prices.1hour30min" data-default="1 Stunde 30 Minuten - 100€">1 Stunde 30 Minuten - 100€</span>
                     </p>
                     <section class="botao-agenda-verde sueco">
                         <a href="https://wa.me/+491637977580" class="botao-verde">
-                            <span class="agenda-text">Massage buchen</span>
+                            <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
                         </a>
                     </section>
                 </section>
                 
+                <!-- Massagem Profunda -->
+                <section class="fundo-verde">
+                    <h1 class="titulo-sobre-mim profunda" data-translate="SERVICE.sections[2].title" data-default="Tiefenmassage">Tiefenmassage</h1>
+                    <img src="images/profunda.png" alt="Foto de massagem profunda" class="foto-mim">
+                    <p class="descricao-massagem profunda" data-translate="SERVICE.sections[2].description" data-default="Die Tiefenmassage ist ideal, um Muskelverspannungen zu lösen.">Die Tiefenmassage ist ideal, um Muskelverspannungen zu lösen.</p>
+                    <p class="precos" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
+                        30 Minuten - 45€<br>
+                        <span data-translate="SERVICE.common.prices.1hour" data-default="1 Stunde - 60€">1 Stunde - 60€</span><br>
+                        <span data-translate="SERVICE.common.prices.1hour30min" data-default="1 Stunde 30 Minuten - 100€">1 Stunde 30 Minuten - 100€</span>
+                    </p>
+                    <section class="botao-agenda">
+                        <a href="https://wa.me/+491637977580" class="botao-branco">
+                            <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
+                        </a>
+                    </section>
+                </section>
+                
+                <!-- Massagem Podal -->
+                <section class="fundo-branco">
+                    <h1 class="titulo-sobre-mim podal" data-translate="SERVICE.sections[3].title" data-default="Fußmassage">Fußmassage</h1>
+                    <img src="images/podal.png" alt="Foto de massagem podal" class="foto-mim">
+                    <p class="descricao-massagem-verde podal" data-translate="SERVICE.sections[3].description" data-default="Eine Fußmassage, die Entspannung und Wohlbefinden fördert.">Eine Fußmassage, die Entspannung und Wohlbefinden fördert.</p>
+                    <p class="precos verde" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
+                        30 Minuten - 45€
+                    </p>
+                    <section class="botao-agenda-verde">
+                        <a href="https://wa.me/+491637977580" class="botao-verde">
+                            <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
+                        </a>
+                    </section>
+                </section>
+                
+                <!-- Massagem Pindas Chinesa -->
+                <section class="fundo-verde">
+                    <h1 class="titulo-sobre-mim pinda" data-translate="SERVICE.sections[4].title" data-default="Kräuterstempelmassage">Kräuterstempelmassage</h1>
+                    <img src="images/pindas.png" alt="Foto de massagem pindas chinesa" class="foto-mim">
+                    <p class="descricao-massagem pindas" data-translate="SERVICE.sections[4].description" data-default="Massage mit aromatischen Pindas für tiefe Entspannung und Energieaufbau.">Massage mit aromatischen Pindas für tiefe Entspannung und Energieaufbau.</p>
+                    <p class="precos" data-translate="SERVICE.common.prices.1hour80" data-default="1 Stunde - 80€">
+                        1 Stunde - 80€<br>
+                        <span data-translate="SERVICE.common.prices.1hour30min120" data-default="1 Stunde 30 Minuten - 120€">1 Stunde 30 Minuten - 120€</span><br>
+                        <span data-translate="SERVICE.common.prices.2hours" data-default="2 Stunden - 150€">2 Stunden - 150€</span>
+                    </p>
+                    <section class="botao-agenda">
+                        <a href="https://wa.me/+491637977580" class="botao-branco">
+                            <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
+                        </a>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Conteúdo Desktop -->
+    <div class="serviceDesktop">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
+                <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
+            </div>
+            
+            <!--
+                <div class="menu">
+                    <span class="languages">
+                        <button class="language-button" data-lang="DE" aria-label="Alterar para Alemão">
+                            <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
+                        </button>
+                        <button class="language-button" data-lang="PT" aria-label="Alterar para Português">
+                            <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
+                        </button>
+                        <button class="language-button" data-lang="EN" aria-label="Alterar para Inglês">
+                            <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
+                        </button>
+                    </span>
+                </div>
+                -->
+        </nav>
+        <!-- Links -->
+        <div class="links-azul">
+            <a href="index.html" data-translate="INDEX.footer-links.home" data-default="Startseite">Startseite</a> / 
+            <a href="#servicos" data-translate="SERVICE.title" data-default="Dienstleistungen">Dienstleistungen</a>
+        </div>
+        
+        <!-- Massagem Relaxamento -->
+        <section class="fundo-verde">
+            <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
+            <h1 class="titulo-sobre-mim relax" data-translate="SERVICE.sections[0].title" data-default="Entspannungsmassage">Entspannungsmassage</h1>
+            <p class="descricao-massagem relax" data-translate="SERVICE.sections[0].description" data-default="Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.">Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.</p>
+            <p class="precos relax" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
+                30 Minuten - 45€<br>
+                <span data-translate="SERVICE.common.prices.1hour" data-default="1 Stunde - 60€">1 Stunde - 60€</span><br>
+                <span data-translate="SERVICE.common.prices.1hour30min" data-default="1 Stunde 30 Minuten - 100€">1 Stunde 30 Minuten - 100€</span>
+            </p>
+            <section class="botao-agenda relax">
+                <a href="https://wa.me/+491637977580" class="botao-branco">
+                    <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
+                </a>
+            </section>
+        </section>
+        
+        <!-- Massagem Sueco -->
+        <section class="fundo-branco">
+            <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
+            <h1 class="titulo-sobre-mim sueco" data-translate="SERVICE.sections[1].title" data-default="Schwedische Massage">Schwedische Massage</h1>
+            <p class="descricao-massagem sueco" data-translate="SERVICE.sections[1].description" data-default="Die schwedische Massage fördert die Durchblutung und tiefe Entspannung.">Die schwedische Massage fördert die Durchblutung und tiefe Entspannung.</p>
+            <p class="precos verde sueco" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
+                30 Minuten - 45€<br>
+                <span data-translate="SERVICE.common.prices.1hour" data-default="1 Stunde - 60€">1 Stunde - 60€</span><br>
+                <span data-translate="SERVICE.common.prices.1hour30min" data-default="1 Stunde 30 Minuten - 100€">1 Stunde 30 Minuten - 100€</span>
+            </p>
+            <section class="botao-agenda sueco">
+                <a href="https://wa.me/+491637977580" class="botao-verde">
+                    <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
+                </a>
+            </section>
+        </section>
+        
         <!-- Massagem Profunda -->
         <section class="fundo-verde">
-            <h1 class="titulo-sobre-mim profunda">Tiefenmassage</h1>
             <img src="images/profunda.png" alt="Foto de massagem profunda" class="foto-mim">
-            <p class="descricao-massagem profunda"></p>
-            <p class="precos">
+            <h1 class="titulo-sobre-mim profunda" data-translate="SERVICE.sections[2].title" data-default="Tiefenmassage">Tiefenmassage</h1>
+            <p class="descricao-massagem profunda" data-translate="SERVICE.sections[2].description" data-default="Die Tiefenmassage ist ideal, um Muskelverspannungen zu lösen.">Die Tiefenmassage ist ideal, um Muskelverspannungen zu lösen.</p>
+            <p class="precos" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
                 30 Minuten - 45€<br>
-                1 Stunde - 60€<br>
-                1 Stunde 30 Minuten - 100€
+                <span data-translate="SERVICE.common.prices.1hour" data-default="1 Stunde - 60€">1 Stunde - 60€</span><br>
+                <span data-translate="SERVICE.common.prices.1hour30min" data-default="1 Stunde 30 Minuten - 100€">1 Stunde 30 Minuten - 100€</span>
             </p>
             <section class="botao-agenda">
                 <a href="https://wa.me/+491637977580" class="botao-branco">
-                    <span class="agenda-text">Massage buchen</span>
+                    <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
                 </a>
             </section>
         </section>
         
         <!-- Massagem Podal -->
         <section class="fundo-branco">
-            <h1 class="titulo-sobre-mim podal">Fußmassage</h1>
             <img src="images/podal.png" alt="Foto de massagem podal" class="foto-mim">
-            <p class="descricao-massagem-verde podal"></p>
-            <p class="precos verde">
+            <h1 class="titulo-sobre-mim podal" data-translate="SERVICE.sections[3].title" data-default="Fußmassage">Fußmassage</h1>
+            <p class="descricao-massagem podal" data-translate="SERVICE.sections[3].description" data-default="Eine Fußmassage, die Entspannung und Wohlbefinden fördert.">Eine Fußmassage, die Entspannung und Wohlbefinden fördert.</p>
+            <p class="precos verde" data-translate="SERVICE.common.prices.30min" data-default="30 Minuten - 45€">
                 30 Minuten - 45€
             </p>
-            <section class="botao-agenda-verde">
+            <section class="botao-agenda">
                 <a href="https://wa.me/+491637977580" class="botao-verde">
-                    <span class="agenda-text">Massage buchen</span>
+                    <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
                 </a>
             </section>
         </section>
         
         <!-- Massagem Pindas Chinesa -->
         <section class="fundo-verde">
-            <h1 class="titulo-sobre-mim pinda">Kräuterstempelmassage</h1>
             <img src="images/pindas.png" alt="Foto de massagem pindas chinesa" class="foto-mim">
-            <p class="descricao-massagem pindas"></p>
-            <p class="precos">
+            <h1 class="titulo-sobre-mim pinda" data-translate="SERVICE.sections[4].title" data-default="Kräuterstempelmassage">Kräuterstempelmassage</h1>
+            <p class="descricao-massagem pindas" data-translate="SERVICE.sections[4].description" data-default="Massage mit aromatischen Pindas für tiefe Entspannung und Energieaufbau.">Massage mit aromatischen Pindas für tiefe Entspannung und Energieaufbau.</p>
+            <p class="precos" data-translate="SERVICE.common.prices.1hour80" data-default="1 Stunde - 80€">
                 1 Stunde - 80€<br>
-                1 Stunde 30 Minuten - 120€<br>
-                2 Stunden - 150€
+                <span data-translate="SERVICE.common.prices.1hour30min120" data-default="1 Stunde 30 Minuten - 120€">1 Stunde 30 Minuten - 120€</span><br>
+                <span data-translate="SERVICE.common.prices.2hours" data-default="2 Stunden - 150€">2 Stunden - 150€</span>
             </p>
             <section class="botao-agenda">
                 <a href="https://wa.me/+491637977580" class="botao-branco">
-                    <span class="agenda-text">Massage buchen</span>
+                    <span class="agenda-text" data-translate="SERVICE.common.button-text" data-default="Massage buchen">Massage buchen</span>
                 </a>
             </section>
         </section>
-        
-    </section>
-</section>
-</div>
-</main>
-</div>
-
-       <!-- Conteúdo Desktop -->
-<div class="serviceDesktop">
-    
-    <nav class="nav">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logotipo fahed masseur" class="logo-img">
-            <img src="images/logotxt.png" alt="Logo em texto" class="logo-img1"> 
-       </div>
-       <div class="menu">
-           <span class="languages">
-               <button aria-label="Alterar para Alemão">
-                   <img src="images/flag-german.png" alt="Bandeira da Alemanha" class="flag">
-               </button>
-               <button aria-label="Alterar para Português">
-                   <img src="images/flag-portugal.png" alt="Bandeira de Portugal" class="flag">
-               </button>
-               <button aria-label="Alterar para Inglês">
-                   <img src="images/flag-uk.png" alt="Bandeira do Reino Unido" class="flag">
-               </button>
-           </span>
-       </div>
-       
-   </nav>
-    <!-- Links -->
-    <div class="links-azul">
-        <a href="index.html">Startseite</a> / 
-        <a href="#servicos">Dienstleistungen</a>
     </div>
-   
-    <!-- Massagem Relaxamento -->
-    <section class="fundo-verde">
-        <img src="images/relaxamento.png" alt="Foto de relaxamento" class="foto-mim">
-        <h1 class="titulo-sobre-mim relax">Entspannungsmassage</h1>
-        <p class="descricao-massagem relax">Die Entspannungsmassage hilft, Stress und Verspannungen abzubauen.</p>
-        <p class="precos relax">
-            30 Minuten - 45€<br>
-            1 Stunde - 60€<br>
-            1 Stunde 30 Minuten - 100€
-        </p>
-        <section class="botao-agenda relax">
-            <a href="https://wa.me/+491637977580" class="botao-branco">
-                <span class="agenda-text">Massage buchen</span>
-            </a>
-        </section>
-    </section>
-    
-    <!-- Massagem Sueco -->
-    <section class="fundo-branco">
-        <img src="images/sueco.png" alt="Foto de massagem sueco" class="foto-mim sueco">
-        <h1 class="titulo-sobre-mim sueco">Schwedische Massage</h1>
-        <p class="descricao-massagem sueco">Die schwedische Massage fördert die Durchblutung und tiefe Entspannung.</p>
-        <p class="precos verde sueco">
-            30 Minuten - 45€<br>
-            1 Stunde - 60€<br>
-            1 Stunde 30 Minuten - 100€
-        </p>
-        <section class="botao-agenda sueco">
-            <a href="https://wa.me/+491637977580" class="botao-verde">
-                <span class="agenda-text">Massage buchen</span>
-            </a>
-        </section>
-    </section>
-    
-    <!-- Massagem Profunda -->
-    <section class="fundo-verde">
-        <img src="images/profunda.png" alt="Foto de massagem profunda" class="foto-mim">
-        <h1 class="titulo-sobre-mim profunda">Tiefenmassage</h1>
-        <p class="descricao-massagem profunda">Die Tiefenmassage ist ideal, um Muskelverspannungen zu lösen.</p>
-        <p class="precos">
-            30 Minuten - 45€<br>
-            1 Stunde - 60€<br>
-            1 Stunde 30 Minuten - 100€
-        </p>
-        <section class="botao-agenda">
-            <a href="https://wa.me/+491637977580" class="botao-branco">
-                <span class="agenda-text">Massage buchen</span>
-            </a>
-        </section>
-    </section>
-    
-    <!-- Massagem Podal -->
-    <section class="fundo-branco">
-        <img src="images/podal.png" alt="Foto de massagem podal" class="foto-mim">
-        <h1 class="titulo-sobre-mim podal">Fußmassage</h1>
-        <p class="descricao-massagem podal">Eine Fußmassage, die Entspannung und Wohlbefinden fördert.</p>
-        <p class="precos verde">
-            30 Minuten - 45€
-        </p>
-        <section class="botao-agenda">
-            <a href="https://wa.me/+491637977580" class="botao-verde">
-                <span class="agenda-text">Massage buchen</span>
-            </a>
-        </section>
-    </section>
-    
-    <!-- Massagem Pindas Chinesa -->
-    <section class="fundo-verde">
-        <img src="images/pindas.png" alt="Foto de massagem pindas chinesa" class="foto-mim">
-        <h1 class="titulo-sobre-mim profunda">Kräuterstempelmassage</h1>
-        <p class="descricao-massagem pindas">Massage mit aromatischen Pindas für tiefe Entspannung und Energieaufbau.</p>
-        <p class="precos">
-            1 Stunde - 80€<br>
-            1 Stunde 30 Minuten - 120€<br>
-            2 Stunden - 150€
-        </p>
-        <section class="botao-agenda">
-            <a href="https://wa.me/+491637977580" class="botao-branco">
-                <span class="agenda-text">Massage buchen</span>
-            </a>
-        </section>
-    </section>
-</div>
 
-<p class="atencao">
-    Achtung: Der Service ist ausschließlich auf das Wohlbefinden ausgerichtet. Keine therapeutischen Massagen, Behandlungen oder Verfahren zur Schmerzlinderung.
-</p>
+    <!-- Mensagem de Atenção -->
+    <p class="atencao" data-translate="ATENCAO.text" data-default="Achtung: Der Service ist ausschließlich auf das Wohlbefinden ausgerichtet. Keine therapeutischen Massagen, Behandlungen oder Verfahren zur Schmerzlinderung.">
+        Achtung: Der Service ist ausschließlich auf das Wohlbefinden ausgerichtet. Keine therapeutischen Massagen, Behandlungen oder Verfahren zur Schmerzlinderung.
+    </p>
 
-<section class="botao-whatsa">
-    <a href="https://wa.me/+491637977580" class="btn-alemao">
-        <img src="images/btn-german-white.png" alt="Agenda sua massagem">
-    </a>           
-</section>
+    <!-- Botão WhatsApp -->
+    <section class="botao-whatsa">
+        <a href="https://wa.me/+491637977580" class="btn-alemao">
+            <img src="images/btn-german-white.png" alt="Agenda sua massagem">
+        </a>           
+    </section>
 
-<footer class="footer-links-azul">
+    <!-- Rodapé -->
+    <footer class="footer-links-azul">
         <ul>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="https://www.instagram.com/fahed.masseur/" target="_blank">Instagram</a></li>
-            <li><a href="service.html">Dienstleistung</a></li>
-            <li><a href="howwork.html">Wie es funktioniert</a></li>
-            <li><a href="sobremim.html">Über mich</a></li>
-            <li><a href="pergunta.html">FAQ</a></li>
-            <li><a href="https://wa.me/+491637977580" target="_blank">WhatsApp</a></li>
+            <li><a href="impressum.html" data-translate="INDEX.footer-links.impressum" data-default="Impressum">Impressum</a></li>
+            <li><a href="https://www.instagram.com/fahed.masseur/" target="_blank" data-translate="INDEX.footer-links.instagram" data-default="Instagram">Instagram</a></li>
+            <li><a href="service.html" data-translate="INDEX.footer-links.service" data-default="Dienstleistung">Dienstleistung</a></li>
+            <li><a href="howwork.html" data-translate="INDEX.footer-links.how-it-works" data-default="Wie es funktioniert">Wie es funktioniert</a></li>
+            <li><a href="sobremim.html" data-translate="INDEX.footer-links.about-me" data-default="Über mich">Über mich</a></li>
+            <li><a href="pergunta.html" data-translate="INDEX.footer-links.faq" data-default="FAQ">FAQ</a></li>
+            <li><a href="https://wa.me/+491637977580" target="_blank" data-translate="INDEX.footer-links.whatsapp" data-default="WhatsApp">WhatsApp</a></li>
         </ul>
-</footer>
+    </footer>
+
+<!--
+    <script src="javascript/lang.js"></script>
+    --> 
 
 </body>
 </html>
