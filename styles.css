@@ -396,12 +396,18 @@ background: var(--cor-fundo-verde);
     line-height: 1.6;
 }
 
-.texto-how  strong{
-    font-size: 1.5em; /* Ajuste o valor conforme necessário */
+.texto-how  p{
+    font-size: 1.2em; /* Ajuste o valor conforme necessário */
     font-weight: bold; /* Isso já é padrão para <strong>, mas pode ser reforçado */
     color: var(--cor-texto-bege);
     font-family: var(--fonte-titulo-grosso);
     
+}
+
+.texto-how  h5{
+ font-size: 0.9em;
+ margin: 30px auto;
+ font-weight: lighter;
 }
 
 .texto-how{
@@ -581,25 +587,26 @@ footer{
     list-style-type: none;
     margin: auto;
     max-width: 500px;
-    gap: 20px;
+    gap: 10px;
     
 }
 
 
 .footer-links-azul{
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     background: var(--cor-fundo-verde);
     width: 100%;
-    padding: 10px 0 ;
+    padding: 0 ;
 }
 
 .footer-links-azul ul{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: auto;
+    margin: 10px auto;
     max-width: 60%;
     gap: 10px;
 
@@ -613,10 +620,10 @@ footer{
 body.impressum-container {
     background: var(--cor-fundo-verde);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin: 50px auto;
     color: var(--cor-fundo-bege);
     font-family: sans-serif;
 }
@@ -625,6 +632,7 @@ body.impressum-container {
     text-align: center;
     max-width: 600px;
     padding: 20px;
+    margin: 50px auto;
 }
 
 .impressum-title {
@@ -655,8 +663,13 @@ body.impressum-container {
     text-decoration: underline;
 }
 
-
-
+.languages ul{
+    list-style-type: none;
+    padding-bottom: 10px ;
+}
+.languages ul li{
+padding: 10px auto;
+}
 
 
 
@@ -868,10 +881,12 @@ footer{
     flex-direction: column;
     font-size: 25px;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     text-decoration: none;
-    margin: 20px auto;
-    max-width: 1473px;
+    margin: 0 auto 10px auto;
+    max-width: 1846px;
+    width: 100%;
+    padding-bottom: 20px;
 
 
 }
@@ -890,7 +905,7 @@ footer{
     display: flex;
     list-style: none;
     gap: 50px;
-    margin: 20px 0;
+    margin: 0 auto;
     max-width: 1600px;
 }
 

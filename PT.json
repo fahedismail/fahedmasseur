@@ -1,6 +1,6 @@
 {
     "INDEX": {
-        "title": "Massagem Móvel no Conforto da Sua Casa",
+        "title": "Massagem a domicilio no Conforto da Sua Casa",
         "text": "Descubra o poder do relaxamento no conforto da sua casa em Berlim.",
         "button-text": "Agende Sua Massagem",
         "whatsapp_button": "images/btn-whatsapp-pt.png", 
@@ -24,19 +24,19 @@
         "title": "Como Funciona Sua Experiência de Massagem?",
         "text": {
             "scheduling": "1. Agendamento:",
-            "scheduling.description": "Os agendamentos são feitos exclusivamente pelo WhatsApp, pois sou surdo e me comunico por mensagens. Basta me enviar uma mensagem para agendar sua sessão.",
+            "schedulingA": "Os agendamentos são feitos exclusivamente pelo WhatsApp, pois sou surdo e me comunico por mensagens. Basta me enviar uma mensagem para agendar sua sessão.",
             "preparation": "2. Preparação do Ambiente:",
-            "preparation.description": "Recomendo que o ambiente esteja tranquilo e bem ventilado antes da minha chegada, para garantir uma experiência mais relaxante.",
+            "preparationA": "Recomendo que o ambiente esteja tranquilo e bem ventilado antes da minha chegada, para garantir uma experiência mais relaxante.",
             "arrival": "3. Chegada do Massoterapeuta:",
-            "arrival.description": "Chegarei no horário combinado, trazendo tudo o que for necessário para a massagem: uma maca profissional, óleos e música suave. Você não precisa se preocupar com nada!",
+            "arrivalA": "Chegarei no horário combinado, trazendo tudo o que for necessário para a massagem: uma maca profissional, óleos e música suave. Você não precisa se preocupar com nada!",
             "initialConversation": "4. Conversa Inicial:",
-            "initialConversation.description": "Antes de começarmos, teremos uma breve conversa para entender o que você espera da massagem e qual tipo de toque prefere, sempre com foco no seu bem-estar.",
+            "initialConversationA": "Antes de começarmos, teremos uma breve conversa para entender o que você espera da massagem e qual tipo de toque prefere, sempre com foco no seu bem-estar.",
             "massage": "5. Massagem:",
-            "massage.description": "Utilizo técnicas de massagem que promovem um relaxamento profundo, restauram sua energia e criam uma sensação de leveza e calma. O objetivo é renovar seu corpo e mente, proporcionando uma sensação única de bem-estar.",
+            "massageA": "Utilizo técnicas de massagem que promovem um relaxamento profundo, restauram sua energia e criam uma sensação de leveza e calma. O objetivo é renovar seu corpo e mente, proporcionando uma sensação única de bem-estar.",
             "closing": "6. Encerramento e Recomendações:",
-            "closing.description": "Após a massagem, ajudarei você a se vestir e darei algumas dicas simples para prolongar os efeitos positivos da sessão.",
+            "closingA": "Após a massagem, ajudarei você a se vestir e darei algumas dicas simples para prolongar os efeitos positivos da sessão.",
             "payment": "7. Pagamento e Despedida:",
-            "payment.description": "O pagamento pode ser feito em dinheiro, cartão ou via Google Pay. Após a sessão, nos despedimos, e você poderá começar seu dia renovado e revigorado!"
+            "paymentA": "O pagamento pode ser feito em dinheiro, cartão ou via Google Pay. Após a sessão, nos despedimos, e você poderá começar seu dia renovado e revigorado!"
         }
     },
     "SERVICE": {
@@ -67,5 +67,27 @@
     },
     "ATENCAO": {
         "text": "Atenção: O serviço é exclusivamente voltado para o bem-estar. Não realizo massagens terapêuticas, tratamentos ou procedimentos para alívio de dores."
+    },
+        "FAQ": {
+            "title": "Perguntas Frequentes",
+            "text": {
+                "question1": "1. O que eu preciso fazer para receber uma massagem em minha casa?",
+                "question2": "2. Como posso agendar um horário?",
+                "question3": "3. Eu tenho dores ou problemas de saúde. Posso receber uma massagem?",
+                "question4": "4. Posso pagar com cartão?",
+                "question5": "5. Quais são o seu horário de funcionamento?",
+                "communicationA": "Escolha um ambiente calmo e confortável, com espaço suficiente para a maca de massagem. Agende um horário em um momento conveniente, para que você possa relaxar sem pressa. Não se preocupe com os materiais – eu trago tudo. Use roupas confortáveis ou roupa íntima, ou, se preferir, pode ficar sem roupa.",
+                "communicationB": "Os agendamentos são feitos exclusivamente pelo WhatsApp. Basta me enviar uma mensagem para combinar o horário e o local.",
+                "communicationC": "Minhas massagens servem para relaxamento e bem-estar, e não são destinadas a tratamentos médicos. Elas são adequadas para pessoas saudáveis.",
+                "communicationD": "Sim, você pode pagar em dinheiro, com cartão (VISA, Mastercard, etc.) ou pelo Google Pay.",
+                "communicationE": "Estou disponível de segunda a sexta-feira com horários flexíveis. Entre em contato comigo pelo WhatsApp para agendar um horário.",
+                "communication": "Comunicação:",
+                "communicationF": "Antes da massagem, me avise sobre suas preferências e necessidades, como se algumas áreas precisam de atenção especial ou se algo deve ser evitado."
+            }
+        }
     }
+<<<<<<< HEAD:PT.json
 }
+=======
+    
+>>>>>>> 7c5676c (ultimo):pt.json
